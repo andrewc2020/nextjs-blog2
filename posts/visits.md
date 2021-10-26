@@ -1,5 +1,5 @@
 ---
-title: 'Organisation: accompagnement de visites en anglais et V.I.Ps'
+title: 'Organisation : accompagnement des visiteurs et cadres anglophones'
 date: '2020-01-02'
 ---
 
