@@ -1,5 +1,5 @@
 ---
-title: 'Hedergement ds '
+title: 'Dégustation de vins et fromages '
 date: '2020-01-01'
 ---
 

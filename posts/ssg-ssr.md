@@ -1,5 +1,5 @@
 ---
-title: 'When to Use Static Generation v.s. Server-side Rendering'
+title: 'Organisation: accompagnement de visites en anglais et V.I.Ps'
 date: '2020-01-02'
 ---
 
