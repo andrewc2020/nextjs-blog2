@@ -37,7 +37,10 @@ export default function Layout({ children, home }) {
               width={144}
               alt={name}
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <h1 className={utilStyles.heading2Xl}><Link href="/profile">
+                <a className={utilStyles.colorInherit}>{name}</a>
+              </Link>
+            </h1>
           </>
         ) : (
           <>
@@ -54,7 +57,7 @@ export default function Layout({ children, home }) {
               </a>
             </Link>
             <h2 className={utilStyles.headingLg}>
-              <Link href="/">
+              <Link href="/profile">
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
             </h2>
