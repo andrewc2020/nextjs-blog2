@@ -29,6 +29,8 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
+           <Link href="/profile">
+              <a>
             <Image
               priority
               src="/images/profile.jpg"
@@ -37,6 +39,8 @@ export default function Layout({ children, home }) {
               width={144}
               alt={name}
             />
+            </a>
+            </Link>
             <h1 className={utilStyles.heading2Xl}><Link href="/profile">
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
