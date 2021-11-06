@@ -1,5 +1,5 @@
 import Layout, { siteTitle } from '../components/layout'
-import Mailto from '../components/mailto'
+
 
 
 
@@ -31,6 +31,6 @@ export default function Profile() {
     Mises en forme et corrections de publications scientifiques, commerciales et techniques.
     Accueil des Collaborateurs et Clients en Anglais (animation autour de repas d’affaires)
     Cours d’anglais en visio ou en présentiel.</p>
-    Stage en HOMESTAY au Conquet.</p></article><Mailto email="someone@somewhere.com" subject="Salut" body="Salut Glyn,">Contactez moi</Mailto>
+    Stage en HOMESTAY au Conquet.</p></article>
   </Layout>
 }
