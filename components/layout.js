@@ -34,7 +34,7 @@ export default function Layout({ children, home }) {
             <Image
               priority
               src="/images/profile.jpg"
-              // className={utilStyles.borderCircle}
+              
               height={144}
               width={144}
               alt={name}
@@ -53,7 +53,7 @@ export default function Layout({ children, home }) {
                 <Image
                   priority
                   src="/images/profile.jpg"
-                  // className={utilStyles.borderCircle}
+                  
                   height={108}
                   width={108}
                   alt={name}
@@ -61,7 +61,7 @@ export default function Layout({ children, home }) {
               </a>
             </Link>
             <h2 className={utilStyles.headingLg}>
-              <Link href="/profile">
+              <Link href="/">
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
             </h2>
