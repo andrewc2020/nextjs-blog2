@@ -37,7 +37,7 @@ export default function Layout({ children, home }) {
               src="/images/profile.jpg"
               
               height={144}
-              width={144}
+              width={130}
               alt={name}
             />
             </a>
@@ -57,7 +57,7 @@ export default function Layout({ children, home }) {
                   src="/images/profile.jpg"
                   
                   height={108}
-                  width={108}
+                  width={100}
                   alt={name}
                 />
               </a>
