@@ -1,7 +1,7 @@
 
 import Layout from '../components/layout'
 import { getProfileData } from '../lib/profile'
-import Layout, { siteTitle } from '../components/layout'
+
 
 
 
