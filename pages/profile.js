@@ -1,36 +1,33 @@
-import Layout, { siteTitle } from '../components/layout'
-import Mailto from '../components/mailto'
+import Layout from '../components/layout'
+import { getProfileData } from '../lib/profile'
 
 
 
 
+export async function getStaticProps(){
 
-export default function Profile() {
+  const data = await getProfileData("profile")
+
+  if(!data){
+    return {
+      redirect: {
+        destination: '/',
+        permanent: false,
+      }
+    }
+  }
+  return {
+    props: { data },
+  }
+
+}
+
+
+
+
+export default function Profile({data}) {
 
     
-    return <Layout Profile> <h1>Mon profil</h1><article><p>Double nationalité Britannique et Française, domicilié en Bretagne au Conquet.</p>
-    <p>Co fondateur de ENGLISH APART à Brest en 1985, Méthode pédagogique de l’enseignement
-    de la langue anglaise basée sur des mises en situation et adaptée aux adultes dans le cadre de
-    la formation continue.
-    Co dirigeant de l’établissement ENGLISH APART, formateur en langue anglaise et coach
-    auprès des professionnels SCIENTIFIQUES, COMMERCIAUX et TECHNIQUES.</p>
-
-    <p>Expérience dans des domaines pluri disciplinaires :
-    Contrôle aérien, Groupes électrogènes, Energies renouvelables, Domaine médical :
-    immunologie, cardiologie, ophtalmologie, Recherche scientifique : données scientifiques,
-    biologie, géologie, Carénage de bateaux, Industrie automobile : générateurs de gaz (inflators)
-    ...</p>
-
-    <h2>Depuis 2021</h2>
-    <p>Auto Entrepreneur
-
-    Facilitateur et Consultant en langue anglaise
-
-    <p>Accompagnateur de projets professionnels, préparation de congrès internationaux en langue
-    anglaise
-    Mises en forme et corrections de publications scientifiques, commerciales et techniques.
-    Accueil des Collaborateurs et Clients en Anglais (animation autour de repas d’affaires)
-    Cours d’anglais en visio ou en présentiel.</p>
-    Stage en HOMESTAY au Conquet.</p></article><Mailto email="someone@somewhere.com" subject="Salut" body="Salut Glyn,">Contactez moi</Mailto>
+    return <Layout Profile> <h2>{ data.title }</h2><article><div dangerouslySetInnerHTML={{ __html: data.contentHtml }} /></article>
   </Layout>
 }
