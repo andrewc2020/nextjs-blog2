@@ -1,5 +1,9 @@
+
 import Layout from '../components/layout'
 import { getProfileData } from '../lib/profile'
+import Layout, { siteTitle } from '../components/layout'
+
+
 
 
 
@@ -28,6 +32,5 @@ export async function getStaticProps(){
 export default function Profile({data}) {
 
     
-    return <Layout Profile> <h2>{ data.title }</h2><article><div dangerouslySetInnerHTML={{ __html: data.contentHtml }} /></article>
-  </Layout>
+    return <Layout Profile> <h2>{ data.title }</h2><article><div dangerouslySetInnerHTML={{ __html: data.contentHtml }} /></article></Layout>
 }
