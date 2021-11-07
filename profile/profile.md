@@ -1,5 +1,5 @@
 ---
-title: 'Mon Profile'
+title: 'Mon Profil'
 date: '2020-04-02'
 ---
 
