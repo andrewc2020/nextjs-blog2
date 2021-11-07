@@ -25,6 +25,6 @@ Accompagnateur de projets professionnels, préparation de congrès internationau
 anglaise.
 
 - Mises en forme et corrections de publications scientifiques, commerciales et techniques.
-- Accueil des Collaborateurs et Clients en Anglais (animation autour de repas d’affaires)
+- Accueil des Collaborateurs et Clients en Anglais (animation autour de repas d’affaires).
 - Cours d’anglais en visio ou en présentiel.
 - Stage en **HOMESTAY** au Conquet.
