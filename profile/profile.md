@@ -8,7 +8,7 @@ Co fondateur de ENGLISH APART à Brest en 1985, Méthode pédagogique de l’ens
 de la langue anglaise basée sur des mises en situation et adaptée aux adultes dans le cadre de
 la formation continue.
 Co dirigeant de l’établissement ENGLISH APART, formateur en langue anglaise et coach
-auprès des professionnels SCIENTIFIQUES, COMMERCIAUX et TECHNIQUES.
+auprès des professionnels **Scientifiques, Commerciaux et Techniques**.
 
 Expérience dans des domaines pluri disciplinaires :
 Contrôle aérien, Groupes électrogènes, Energies renouvelables, Domaine médical :
