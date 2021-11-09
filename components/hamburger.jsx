@@ -1,4 +1,5 @@
 import hamburgerstyles from './hamburger.module.css'
+
 export const Hamburger = () =>{
   
   const handleClick = (e) => {
@@ -15,20 +16,21 @@ export const Hamburger = () =>{
 
 };
     return (
-      
+ <div className={hamburgerstyles.mobile-container}>    
 <div className={hamburgerstyles.topnav} >
-  <a href="#home" className={hamburgerstyles.active}>Logo</a>
+  <a href="/" className={hamburgerstyles.active}>Logo</a>
  
   <div id="myLinks">
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
+   
+    <a href="/profile">Contact</a>
+    <a href="/profile">About</a>
   </div>
 
-  <a href="javascript:void(0);" className="icon" onclick={handleClick(e)}>
+  <a href="javascript:void(0);" className="icon" onClick={(e) => handleClick(e)} >
     <i className="fa fa-bars"></i>
   </a>
 </div>
+</div> 
 
     )
 
