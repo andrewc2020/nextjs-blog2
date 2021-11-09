@@ -4,7 +4,7 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Mailto from '../components/mailto'
-import Hamburger from '../components/hamburger'
+import {Hamburger} from '../components/hamburger'
 
 const name = 'Glyn'
 export const siteTitle = 'Next.js Sample Website'
