@@ -17,21 +17,21 @@ export const Hamburger = () =>{
 };
     return (
        
-<div className={hamburgerstyles.mobile}>
+
 <div className={hamburgerstyles.topnav} >
   <a href="/" className={hamburgerstyles.active}>Home</a>
  
   <div id="myLinks">
-   
-
+  
+    <a href="/profile">Contact</a>
     <a href="/profile">About</a>
   </div>
 
-  <a href="javascript:void(0);" className="icon" onClick={(e) => handleClick(e)} >
+  <a  href="javascript:void(0);"  className={hamburgerstyles.icon} onClick={(e) => handleClick(e)} >
     <i className="fa fa-bars"></i>
   </a>
 </div>
-</div>
+
 
 
     )

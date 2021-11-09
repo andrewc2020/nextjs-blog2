@@ -1,9 +1,16 @@
 .container {
-    max-width: 36rem;
+    
     padding: 0 1rem;
-    margin: 3rem auto 6rem;
-    width:100%;
-    float:left;
+   
+    max-width: 480px;
+  margin: auto;
+ 
+
+
+  border-radius: 10px;
+   
+   
+   
   }
   
   .header {
