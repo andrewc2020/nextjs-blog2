@@ -16,7 +16,8 @@ export const Hamburger = () =>{
 
 };
     return (
-  
+       
+<div className={hamburgerstyles.mobile}>
 <div className={hamburgerstyles.topnav} >
   <a href="/" className={hamburgerstyles.active}>Home</a>
  
@@ -29,6 +30,7 @@ export const Hamburger = () =>{
   <a href="javascript:void(0);" className="icon" onClick={(e) => handleClick(e)} >
     <i className="fa fa-bars"></i>
   </a>
+</div>
 </div>
 
 
