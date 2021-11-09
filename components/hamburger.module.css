@@ -1,15 +1,8 @@
 
 
 @media only screen and (max-width: 800px) {
+
   
-  .mobile-container {
-    max-width:350px;
-    margin: auto;
-    background-color: #555;
-    height: 500px;
-    color: white;
-    border-radius: 10px;
-  }
 
     /* Style the navigation menu */
 .topnav {
@@ -57,7 +50,7 @@
 
   @media only screen and (min-width: 801px) {
 
-  .mobile-container {
+  .mobile {
     max-width:350px;
     margin: auto;
     background-color: #555;

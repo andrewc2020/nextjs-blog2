@@ -16,13 +16,13 @@ export const Hamburger = () =>{
 
 };
     return (
- <div className={hamburgerstyles.mobile-container}>    
+  
 <div className={hamburgerstyles.topnav} >
-  <a href="/" className={hamburgerstyles.active}>Logo</a>
+  <a href="/" className={hamburgerstyles.active}>Home</a>
  
   <div id="myLinks">
    
-    <a href="/profile">Contact</a>
+
     <a href="/profile">About</a>
   </div>
 
@@ -30,7 +30,7 @@ export const Hamburger = () =>{
     <i className="fa fa-bars"></i>
   </a>
 </div>
-</div> 
+
 
     )
 
