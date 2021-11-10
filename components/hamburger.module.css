@@ -13,7 +13,7 @@
     /* Style the navigation menu */
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: rgb(240, 230, 230);
   position: relative;
   
   
@@ -26,7 +26,7 @@
 
 /* Style navigation menu links */
 .topnav a {
-  color: white;
+  color: rgb(112, 108, 108);
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -37,7 +37,7 @@
 
 /* Style the hamburger menu */
 .icon {
-  background: black;
+  background: rgb(201, 198, 198);
   display: block;
   position: absolute;
   right: 0;
@@ -49,13 +49,13 @@
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
   background-color: #ddd;
-  color: black;
+  color: rgb(124, 117, 117);
 }
 
 /* Style the active link (or home/logo) */
 .active {
-  background-color: #04AA6D;
-  color: white;
+  background-color: rgb(208, 240, 228);
+  color: rgb(117, 114, 114);
 }
   }
 
@@ -70,7 +70,8 @@
   
   .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: rgb(202, 196, 196);
+    color:black;
     position: relative;
   }
   
@@ -92,12 +93,12 @@
   
   .topnav a:hover {
     background-color: #ddd;
-    color: black;
+    color: rgb(124, 117, 117);
   }
   
   .active {
-    background-color: #04AA6D;
-    color: white;
+    background-color: rgb(208, 240, 228);
+    color: rgb(117, 114, 114);
 
   }
 }
