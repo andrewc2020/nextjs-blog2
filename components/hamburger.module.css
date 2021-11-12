@@ -20,7 +20,9 @@
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
-div #myLinks {
+
+
+.hidden{
   display: none;
 }
 
@@ -30,7 +32,8 @@ div #myLinks {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  display: block;
+  display:block;
+ 
 
   
 }

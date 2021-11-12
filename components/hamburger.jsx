@@ -21,7 +21,7 @@ export const Hamburger = () =>{
 <div className={hamburgerstyles.topnav} >
   <a href="/" className={hamburgerstyles.active}>Accueil</a>
  
-  <div id="myLinks">
+  <div id="myLinks" className={hamburgerstyles.hidden}>
   
    
     <a href="/profile">Qui sommes nous?</a>
