@@ -19,12 +19,12 @@ export const Hamburger = () =>{
        
 
 <div className={hamburgerstyles.topnav} >
-  <a href="/" className={hamburgerstyles.active}>Home</a>
+  <a href="/" className={hamburgerstyles.active}>Accueil</a>
  
   <div id="myLinks">
   
    
-    <a href="/profile">About</a>
+    <a href="/profile">Qui sommes nous?</a>
   </div>
 
   <a  href="javascript:void(0);"  className={hamburgerstyles.icon} onClick={(e) => handleClick(e)} >
