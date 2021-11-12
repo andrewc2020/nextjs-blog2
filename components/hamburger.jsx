@@ -1,4 +1,5 @@
 import hamburgerstyles from './hamburger.module.css'
+import Link from 'next/link'
 
 export const Hamburger = () =>{
   
@@ -19,12 +20,12 @@ export const Hamburger = () =>{
        
 
 <div className={hamburgerstyles.topnav} >
-  <a href="/" className={hamburgerstyles.active}>accueil</a>
+  <Link href="/" className={hamburgerstyles.active}>accueil</Link>
  
   <div id="myLinks" className={hamburgerstyles.hidden}>
   
    
-    <a href="/profile">à propos moi</a>
+    <Link href="/profile">à propos moi</Link>
   </div>
 
   <a  href="javascript:void(0);"  className={hamburgerstyles.icon} onClick={(e) => handleClick(e)} >
