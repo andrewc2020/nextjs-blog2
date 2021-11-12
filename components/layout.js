@@ -4,6 +4,7 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Mailto from '../components/mailto'
+import {Hamburger} from '../components/hamburger'
 
 const name = 'Glyn'
 export const siteTitle = 'Next.js Sample Website'
@@ -13,6 +14,7 @@ export default function Layout({ children, home }) {
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
         <meta
           name="description"
           content="Learn how to build a personal website using Next.js"
@@ -26,7 +28,9 @@ export default function Layout({ children, home }) {
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
+      <Hamburger />
       <header className={styles.header}>
         {home ? (
           <>
