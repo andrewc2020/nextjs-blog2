@@ -5,10 +5,10 @@ export const Hamburger = () =>{
   const handleClick = (e) => {
     e.preventDefault()
     var x = document.getElementById("myLinks");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
+    if (x.style.display === "block") {
         x.style.display = "none";
+    } else {
+        x.style.display = "block";
     }
 
     
@@ -19,12 +19,12 @@ export const Hamburger = () =>{
        
 
 <div className={hamburgerstyles.topnav} >
-  <a href="/" className={hamburgerstyles.active}>Accueil</a>
+  <a href="/" className={hamburgerstyles.active}>accueil</a>
  
   <div id="myLinks" className={hamburgerstyles.hidden}>
   
    
-    <a href="/profile">Qui sommes nous?</a>
+    <a href="/profile">à propos moi</a>
   </div>
 
   <a  href="javascript:void(0);"  className={hamburgerstyles.icon} onClick={(e) => handleClick(e)} >
