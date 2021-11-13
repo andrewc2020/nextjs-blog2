@@ -31,10 +31,11 @@ export const Hamburger = () =>{
     <a>à propos moi </a>
     </Link>
   </div>
-
-  <a  href="javascript:void(0);"  className={hamburgerstyles.icon} onClick={(e) => handleClick(e)} >
-    <i className="fa fa-bars"></i>
-  </a>
+            <Link href="javascript:void(0);">
+                <a  className={hamburgerstyles.icon} onClick={(e) => handleClick(e)} >
+                    <i className="fa fa-bars"></i>
+                </a>
+            </Link>
 </div>
 
 
