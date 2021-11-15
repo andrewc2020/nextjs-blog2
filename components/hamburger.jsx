@@ -28,7 +28,7 @@ export const Hamburger = () =>{
   
    
     <Link href="/profile">
-    <a>à propos moi </a>
+    <a>à propos de moi </a>
     </Link>
   </div>
             <Link href="javascript:void(0);">
