@@ -1,5 +1,5 @@
 ---
-title: 'Dégustation de vins et fromages '
+title: 'Accueil des Collaborateurs et Clients en Anglais'
 date: '2020-01-01'
 ---
 

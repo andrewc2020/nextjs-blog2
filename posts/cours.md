@@ -1,5 +1,5 @@
 ---
-title: 'Organisation : accompagnement des visiteurs et cadres anglophones'
+title: 'Cours d’anglais distanciel ou en présentiel'
 date: '2020-04-02'
 ---
 

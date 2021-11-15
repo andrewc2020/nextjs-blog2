@@ -37,5 +37,5 @@ Auto Entrepreneur
 anglaise.
 - Mises en forme et corrections de publications scientifiques, commerciales et techniques.
 - Accueil des Collaborateurs et Clients en Anglais (animation autour de repas d’affaires).
-- Cours d’anglais en visio ou en présentiel.
+- Cours d’anglais distanciel ou en présentiel.
 - **WORKING HOLIDAY** au Conquet.
