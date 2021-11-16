@@ -4,4 +4,5 @@ module.exports = {
       locales: ["fr"],
       defaultLocale: "fr",
     },
+    tsconfigPath:"./"
   };
