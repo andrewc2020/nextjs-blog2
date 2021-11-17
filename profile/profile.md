@@ -33,9 +33,3 @@ Auto Entrepreneur
 
 **Facilitateur et Consultant en langue anglaise**
 
-- Accompagnateur de projets professionnels, préparation de congrès internationaux en langue
-anglaise.
-- Mises en forme et corrections de publications scientifiques, commerciales et techniques.
-- Accueil des Collaborateurs et Clients en Anglais (animation autour de repas d’affaires).
-- Cours d’anglais distanciel ou en présentiel.
-- **WORKING HOLIDAY** au Conquet.

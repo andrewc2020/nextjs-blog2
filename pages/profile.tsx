@@ -32,5 +32,5 @@ export async function getStaticProps(){
 export default function Profile({data}) {
 
     
-    return <Layout Profile> <h2>{ data.title }</h2><article><div dangerouslySetInnerHTML={{ __html: data.contentHtml }} /></article></Layout>
+    return <Layout home={false}> <h2>{ data.title }</h2><article><div dangerouslySetInnerHTML={{ __html: data.contentHtml }} /></article></Layout>
 }
