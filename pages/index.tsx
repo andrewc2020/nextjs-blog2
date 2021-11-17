@@ -20,10 +20,10 @@ export default function Home({ allPostsData }) {
   useEffect(() => {
     // Update the document title using the browser API
 
-    console.log(location.href);
+
     
     let y = location.href;
-    console.log(y.indexOf('#'));
+   
     if(y.indexOf('#') >-1){
       
 
