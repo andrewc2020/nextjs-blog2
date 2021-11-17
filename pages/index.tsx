@@ -42,12 +42,7 @@ export default function Home({ allPostsData }) {
     const handleClick = (e) => {
       e.preventDefault()
       var x = document.getElementById("services");
-      if (x.style.display === "block" ) {
-          x.style.display = "none";
-      } else {
-          x.style.display = "block";
-      }
-  
+      x.classList.toggle('utils_hidden__ImX6l')
       
   
   
