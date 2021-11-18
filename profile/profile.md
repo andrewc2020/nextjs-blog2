@@ -31,5 +31,5 @@ biologie, géologie, Carénage de bateaux, Industrie automobile : générateurs 
 **Depuis 2021**
 Auto Entrepreneur
 
-**Facilitateur et Consultant en langue anglaise**
+[**Facilitateur et Consultant en langue anglaise**](/#services)
 

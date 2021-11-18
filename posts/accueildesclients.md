@@ -1,11 +1,17 @@
 ---
 title: 'Accueil des Collaborateurs et Clients en Anglais'
-date: '2020-01-01'
+index: 3
 ---
 
-Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
+Afin de valoriser l’accueil de vos partenaires (clients et collaborateurs) je vous propose des
+accompagnements personnalisés :
 
-- **Static Generation** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.
-- **Server-side Rendering** is the pre-rendering method that generates the HTML on **each request**.
+-  ***Visite et présentation de votre entreprise***
+- ***Participation et animation de repas d’affaire***
+- ***Prise en charge de vos clients dans les moments de convivialités :***
 
-Importantly, Next.js lets you **choose** which pre-rendering form to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.
+> Découverte de la gastronomie Française et des produits locaux, dégustations œnologiques.
+Visites de la région et de sites touristiques en voiture ou en balade à pied.
+Visite préliminaire avant installation en Bretagne.
+Excursion dans le PARC MARIN (découverte de la faune et la flore), visite des îles :
+Ouessant et Molène.
