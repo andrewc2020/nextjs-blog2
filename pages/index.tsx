@@ -56,10 +56,10 @@ export default function Home({ allPostsData }) {
       {/* Keep the existing code here */}
       <Link href='javascript:void(0)'>
       
-      <h2 className={utilStyles.headingLg}><a onClick={(e) => handleClick(e)}>Facilitateur</a> et Consultant en langue anglaise</h2>
+      <h2 className={utilStyles.headingLg}><a onClick={(e) => handleClick(e)}>Facilitateur et Consultant en langue anglaise</a></h2> 
      
       </Link>
-
+      {/* <h2>en langue anglaise</h2> */}
       {/* Add this <section> tag below the existing <section> tag */}
       <section id='services' className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${utilStyles.hidden}`}>
       
