@@ -1,5 +1,5 @@
 ---
-title: 'Cours d’anglais distanciel ou en présentiel'
+title: 'Cours d’anglais en distanciel ou en présentiel'
 index: 4
 ---
 

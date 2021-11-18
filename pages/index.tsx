@@ -43,8 +43,6 @@ export default function Home({ allPostsData }) {
       e.preventDefault()
       var x = document.getElementById("services");
       x.classList.toggle('utils_hidden__ImX6l')
-      
-  
   
   };
 
@@ -54,20 +52,26 @@ export default function Home({ allPostsData }) {
   return (
     <Layout home>
       {/* Keep the existing code here */}
-      <Link href='javascript:void(0)'>
       
-      <h2 className={utilStyles.headingLg}><a onClick={(e) => handleClick(e)}>Facilitateur et Consultant en langue anglaise</a></h2> 
+      
+      
+      <div className= {utilStyles.centred}>
+      <h2 className={utilStyles.headingMd}>Facilitateur et Consultant en langue anglaise</h2> 
+      <Link href='javascript:void(0)'>
+        <a id='showhide'  onClick={(e) => handleClick(e)}>Mes services</a>
      
       </Link>
+      </div>
       {/* <h2>en langue anglaise</h2> */}
       {/* Add this <section> tag below the existing <section> tag */}
+      <p/>
       <section id='services' className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${utilStyles.hidden}`}>
       
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, index, title }) => (
-           <li className={utilStyles.listItem} key={id}>
+           <li className={utilStyles.listItem}  key={id}>
            <Link href={`/posts/${id}`}>
-             <a>{title}</a>
+             <a ><small>{title}</small></a>
            </Link>
            <br />
            <small className={ `${utilStyles.lightText} ${utilStyles.hidden}`}>

@@ -1,5 +1,5 @@
 ---
-title: 'Accueil des Collaborateurs et Clients en Anglais'
+title: 'Accueil des Collaborateurs et Clients'
 index: 3
 ---
 
