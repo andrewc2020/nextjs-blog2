@@ -1,6 +1,6 @@
 ---
 title: 'Accueil des Collaborateurs et Clients en Anglais'
-date: '2020-01-01'
+index: 3
 ---
 
 Afin de valoriser l’accueil de vos partenaires (clients et collaborateurs) je vous propose des

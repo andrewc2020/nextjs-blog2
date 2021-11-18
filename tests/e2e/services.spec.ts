@@ -5,9 +5,9 @@ test('navigating to #services should reveal services',async ({ page }) =>{
 
     await page.goto('/#services')
 
-    const locator = page.locator('.utils_hidden__ImX6l');
+    const locator = page.locator('.utils_headingMd__3de6G');
 
-    await expect(locator).toBeHidden();
+    await expect(locator).toBeVisible();
 
-
+    
 })
