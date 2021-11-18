@@ -3,7 +3,7 @@ import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
-import Date from '../components/date'
+
 import React, { useState, useEffect } from 'react';
 
 export async function getStaticProps() {
@@ -64,14 +64,14 @@ export default function Home({ allPostsData }) {
       <section id='services' className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${utilStyles.hidden}`}>
       
         <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
+          {allPostsData.map(({ id, index, title }) => (
            <li className={utilStyles.listItem} key={id}>
            <Link href={`/posts/${id}`}>
              <a>{title}</a>
            </Link>
            <br />
-           <small className={utilStyles.lightText}>
-             <Date dateString={date} />
+           <small className={ `${utilStyles.lightText} ${utilStyles.hidden}`}>
+             {index}
            </small>
          </li>
           ))}
