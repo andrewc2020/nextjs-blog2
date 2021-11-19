@@ -6,9 +6,9 @@ index: 3
 Afin de valoriser l’accueil de vos partenaires (clients et collaborateurs) je vous propose des
 accompagnements personnalisés :
 
--  ***Visite et présentation de votre entreprise***
-- ***Participation et animation de repas d’affaire***
-- ***Prise en charge de vos clients dans les moments de convivialités :***
+- [***Visite et présentation de votre entreprise***](/accueil/visite)
+- [***Participation et animation de repas d’affaire***](/accueil/participation)
+- [***Prise en charge de vos clients dans les moments de convivialités :***](/accueil/prise)
 
 > Découverte de la gastronomie Française et des produits locaux, dégustations œnologiques.
 Visites de la région et de sites touristiques en voiture ou en balade à pied.
