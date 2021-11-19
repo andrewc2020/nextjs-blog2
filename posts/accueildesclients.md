@@ -8,10 +8,6 @@ accompagnements personnalisés :
 
 - [***Visite et présentation de votre entreprise***](/accueil/visite)
 - [***Participation et animation de repas d’affaire***](/accueil/participation)
-- [***Prise en charge de vos clients dans les moments de convivialités :***](/accueil/prise)
+- [***Prise en charge de vos clients dans les moments de convivialités***](/accueil/prise)
 
-> Découverte de la gastronomie Française et des produits locaux, dégustations œnologiques.
-Visites de la région et de sites touristiques en voiture ou en balade à pied.
-Visite préliminaire avant installation en Bretagne.
-Excursion dans le PARC MARIN (découverte de la faune et la flore), visite des îles :
-Ouessant et Molène.
+

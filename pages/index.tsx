@@ -69,7 +69,8 @@ export default function Home({ allPostsData }) {
       
       
       <div className= {utilStyles.centred}>
-      <h2 className={utilStyles.headingMd}>Facilitateur et Consultant en langue anglaise</h2> 
+      <small>Facilitateur et Consultant en</small>
+      <h2 className={utilStyles.headingMd}>Anglais</h2> 
       <Link href='javascript:void(0)'>
         <a id='showhide'  onClick={(e) => handleClick(e)}>{isShow && !isServices?'masquer services':'services'}</a>
      
