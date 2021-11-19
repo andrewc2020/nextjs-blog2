@@ -5,7 +5,7 @@ date: '2020-04-02'
 
 Double nationalité Britannique et Française, domicilié en Bretagne au Conquet.
 
-Co fondateur de ENGLISH APART à Brest en 1985; Méthode pédagogique de l’enseignement
+Co-fondateur de ENGLISH APART à Brest en 1985; Méthode pédagogique de l’enseignement
 de la langue anglaise basée sur des mises en situation et adaptée aux adultes dans le cadre de
 la formation continue.
 
