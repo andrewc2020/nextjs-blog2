@@ -17,6 +17,9 @@ export async function getStaticProps() {
 
 export default function Home({ allPostsData }) {
 
+  const [isShow, setIsShow] = React.useState(false);
+  const [isServices, setIsServices] = React.useState(false);
+
   useEffect(() => {
     // Update the document title using the browser API
 
@@ -28,11 +31,17 @@ export default function Home({ allPostsData }) {
       
 
       var x = document.getElementById("services");
-    
-      
+      setIsShow(true);
+      setIsServices(true)
+     
       x.classList.remove("utils_hidden__ImX6l");
+      
 
+    } else{
+      setIsServices(false)
+     
     }
+
    
     
   });
@@ -41,8 +50,12 @@ export default function Home({ allPostsData }) {
      
     const handleClick = (e) => {
       e.preventDefault()
+      setIsShow(!isShow);
       var x = document.getElementById("services");
       x.classList.toggle('utils_hidden__ImX6l')
+      
+      
+      
   
   };
 
@@ -56,9 +69,10 @@ export default function Home({ allPostsData }) {
       
       
       <div className= {utilStyles.centred}>
-      <h2 className={utilStyles.headingMd}>Facilitateur et Consultant en langue anglaise</h2> 
+      <small>Facilitateur et Consultant en</small>
+      <h2 className={utilStyles.headingMd}>Anglais</h2> 
       <Link href='javascript:void(0)'>
-        <a id='showhide'  onClick={(e) => handleClick(e)}>Mes services</a>
+        <a id='showhide'  onClick={(e) => handleClick(e)}>{isShow && !isServices?'masquer services':'services'}</a>
      
       </Link>
       </div>
