@@ -3,10 +3,10 @@ import Head from 'next/head'
 
 import utilStyles from '../../styles/utils.module.css'
 
-import { getAllAccueilIds, getAccueilData } from '../../lib/accueil'
+import { getAllPosts2Ids, getPosts2Data } from '../../lib/posts2'
 
 export async function getStaticProps({ params }) {
-  const postData = await getAccueilData(params.id)
+  const postData = await getPosts2Data(params.id)
   return {
     props: {
       postData
@@ -15,7 +15,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-    const paths = getAllAccueilIds()
+    const paths = getAllPosts2Ids()
     return {
       paths,
       fallback: false

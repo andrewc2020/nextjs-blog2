@@ -69,10 +69,12 @@ export default function Home({ allPostsData }) {
       
       
       <div className= {utilStyles.centred}>
-      <small>Facilitateur et Consultant en</small>
+      <small>Facilitateur et Consultant spécialisé en</small>
       <h2 className={utilStyles.headingMd}>Anglais</h2> 
+      <small>pour les organisations</small>
+      <small>commerciales, scientifiques et techniques</small>
       <Link href='javascript:void(0)'>
-        <a id='showhide'  onClick={(e) => handleClick(e)}>{isShow && !isServices?'masquer services':'services'}</a>
+        <a id='showhide' onClick={(e) => handleClick(e)}>{isShow && !isServices?'masquer services':'services'}</a>
      
       </Link>
       </div>
