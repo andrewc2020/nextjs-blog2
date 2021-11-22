@@ -7,5 +7,5 @@ test('a link within a post successfully delivers the page', async({page}) =>{
     // Find an element with the text 'Glyn' and click on it
     await page.click('text=Visit')
 
-    await expect(page).toHaveURL('/accueil/visite')
+    await expect(page).toHaveURL('/posts2/visite')
 })
