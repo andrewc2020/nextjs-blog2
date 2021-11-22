@@ -51,6 +51,7 @@ export default function Layout({ children, home }) {
               </Link>
             </h1>
             <Mailto email="someone@somewhere.com" subject="Salut" body="Salut Glyn,">Contactez moi</Mailto>
+            <small>pour les tarifs et conditions</small>
           </>
         ) : (
           <>
@@ -72,6 +73,7 @@ export default function Layout({ children, home }) {
               </Link>
             </h2>
             <Mailto email="someone@somewhere.com" subject="Salut" body="Salut Glyn,">Contactez moi</Mailto>
+            <small>pour les tarifs et conditions</small>
           </>
         )}
       </header>

@@ -69,10 +69,9 @@ export default function Home({ allPostsData }) {
       
       
       <div className= {utilStyles.centred}>
-      <small>Facilitateur et Consultant spécialisé en</small>
+      <small>Facilitateur et Consultant en</small>
       <h2 className={utilStyles.headingMd}>Anglais</h2> 
-      <small>pour les organisations</small>
-      <small>commerciales, scientifiques et techniques</small>
+      
 
        {/* Add the services show/hide button when at home level otherwise dispense with it  */}
       {!isServices?(
