@@ -11,7 +11,7 @@ export const siteTitle = 'Next.js Sample Website'
 
 export default function Layout({ children, home }) {
   return (
-    <div className={styles.container}>
+    <div >
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
@@ -30,7 +30,8 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Hamburger />
+      <Hamburger className={styles.mobile} />
+     <div className={styles.container}>
       <header className={styles.header}>
         {home ? (
           <>
@@ -77,6 +78,7 @@ export default function Layout({ children, home }) {
           </>
         )}
       </header>
+      
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
@@ -85,6 +87,8 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
       )}
+      </div>
     </div>
   )
+ 
 }
