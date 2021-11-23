@@ -89,11 +89,11 @@ export default function Home({ allPostsData }) {
       
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, index, title }) => (
-           <li className={utilStyles.listItem}  key={id}>
+           <li   key={id}>
            <Link href={`/posts/${id}`}>
-             <a ><small>{title}</small></a>
+             <a ><small>{title}.</small></a>
            </Link>
-           <br />
+        
            <small className={ `${utilStyles.lightText} ${utilStyles.hidden}`}>
              {index}
            </small>

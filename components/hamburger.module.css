@@ -104,4 +104,11 @@
     color: rgb(117, 114, 114);
 
   }
+
+  /* Hide the hamburger menu */
+.icon {
+ 
+  display: none;
+  
+}
 }
