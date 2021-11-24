@@ -3,8 +3,8 @@ import Image from 'next/image'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
-import Mailto from '../components/mailto'
-import {Hamburger} from '../components/hamburger'
+import Mailto from './mailto'
+import {Hamburger} from './hamburger'
 
 const name = 'Glyn'
 export const siteTitle = 'Next.js Sample Website'
@@ -30,7 +30,7 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Hamburger className={styles.mobile} />
+      <Hamburger />
      <div className={styles.container}>
       <header className={styles.header}>
         {home ? (
