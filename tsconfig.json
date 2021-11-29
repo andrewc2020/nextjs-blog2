@@ -23,7 +23,7 @@
     "**/*.ts",
     "**/*.tsx",
     "**/*.css",
-    "additional.d.ts", "lib/posts.js"
+    "additional.d.ts", "lib/posts.ts"
   ],
   "exclude": [
     "node_modules"

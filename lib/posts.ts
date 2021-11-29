@@ -6,6 +6,8 @@ import html from 'remark-html'
 
 const postsDirectory = path.join(process.cwd(), 'posts')
 
+
+
 export function getSortedPostsData() {
   // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory)
@@ -18,12 +20,16 @@ export function getSortedPostsData() {
     const fileContents = fs.readFileSync(fullPath, 'utf8')
 
     // Use gray-matter to parse the post metadata section
-    const matterResult = matter(fileContents)
+    const { data, content } = matter(fileContents)
+    
 
     // Combine the data with the id
     return {
       id,
-      ...matterResult.data
+      index: data.index,
+      ...data
+     
+      
     }
   })
   // Sort posts by index#
