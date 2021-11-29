@@ -7,8 +7,7 @@ import html from 'remark-html'
 
 const postsDirectory = path.join(process.cwd(), 'profile')
 
-
-export async function getProfileData(id) {
+export async function getProfileData(id: string) {
     const fullPath = path.join(postsDirectory, `${id}.md`)
     const fileContents = fs.readFileSync(fullPath, 'utf8')
   

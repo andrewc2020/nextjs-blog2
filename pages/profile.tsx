@@ -5,7 +5,17 @@ import { getProfileData } from '../lib/profile'
 
 
 
+interface Data{
+  
+  data: Post
+}
 
+interface Post{
+  id: string,
+  title:string,
+  index: number,
+  contentHtml: any
+}
 
 
 export async function getStaticProps(){
@@ -29,7 +39,7 @@ export async function getStaticProps(){
 
 
 
-export default function Profile({data}) {
+export default function Profile({data}: Data) {
 
     
     return <Layout home={false}> <h2>{ data.title }</h2><article><div dangerouslySetInnerHTML={{ __html: data.contentHtml }} /></article></Layout>

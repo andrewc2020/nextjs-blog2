@@ -5,11 +5,20 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Mailto from './mailto'
 import {Hamburger} from './hamburger'
+import {FC} from 'react'
 
 const name = 'Glyn'
 export const siteTitle = 'Next.js Sample Website'
 
-export default function Layout({ children, home }) {
+interface Props {
+  // any props that come into the component
+  children: any,
+  home: boolean
+}
+
+export default function Layout({ children, home }: Props) {
+  
+
   return (
     <div >
       <Head>

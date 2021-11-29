@@ -6,6 +6,12 @@ import Link from 'next/link'
 
 import React, { useState, useEffect } from 'react';
 
+
+interface Post{
+  id: string,
+  index: number,
+  title: string
+}
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
   return {
@@ -15,7 +21,7 @@ export async function getStaticProps() {
   }
 }
 
-export default function Home({ allPostsData }) {
+export default function Home({ allPostsData}: any) {
 
   const [isShow, setIsShow] = React.useState(false);
   const [isServices, setIsServices] = React.useState(false);
@@ -25,12 +31,12 @@ export default function Home({ allPostsData }) {
 
 
     
-    let y = location.href;
+    let y: string = location.href;
    
     if(y.indexOf('#') >-1){
       
 
-      var x = document.getElementById("services");
+      let x: any = document.getElementById("services");
       setIsShow(true);
       setIsServices(true)
      
@@ -48,10 +54,10 @@ export default function Home({ allPostsData }) {
 
 
      
-    const handleClick = (e) => {
+    const handleClick = (e: any) => {
       e.preventDefault()
       setIsShow(!isShow);
-      var x = document.getElementById("services");
+      let x: any = document.getElementById("services");
       x.classList.toggle('utils_hidden__ImX6l')
       
       
@@ -88,14 +94,14 @@ export default function Home({ allPostsData }) {
       <section id='services' className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${utilStyles.hidden}`}>
       
         <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, index, title }) => (
+          {allPostsData.map(({ id, index, title }: Post) => (
            <li   key={id}>
            <Link href={`/posts/${id}`}>
              <a ><small>{title}.</small></a>
            </Link>
         
            <small className={ `${utilStyles.lightText} ${utilStyles.hidden}`}>
-             {index}
+             {index.toString()}
            </small>
          </li>
           ))}

@@ -5,7 +5,15 @@ import utilStyles from '../../styles/utils.module.css'
 
 import { getAllPosts2Ids, getPosts2Data } from '../../lib/posts2'
 
-export async function getStaticProps({ params }) {
+interface staticProps{
+  params: any
+}
+
+interface postProps{
+  postData: any
+}
+
+export async function getStaticProps({ params }: staticProps) {
   const postData = await getPosts2Data(params.id)
   return {
     props: {
@@ -22,7 +30,7 @@ export async function getStaticPaths() {
     }
   }
 
-  export default function Post({ postData }) {
+  export default function Post({ postData }: postProps) {
     return (
       <Layout home={false}>
         <Head>
