@@ -13,9 +13,10 @@ interface staticProps{
 interface postProps{
   postData: any
 }
+const folder: string = 'posts'
 
 export async function getStaticProps({ params }: staticProps) {
-  const postData = await getPostData(params.id)
+  const postData = await getPostData(params.id, folder)
   return {
     props: {
       postData
@@ -24,7 +25,7 @@ export async function getStaticProps({ params }: staticProps) {
 }
 
 export async function getStaticPaths() {
-    const paths = getAllPostIds()
+    const paths = getAllPostIds(folder)
     return {
       paths,
       fallback: false

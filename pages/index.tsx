@@ -13,8 +13,9 @@ type Post = {
   index: number,
   title: string
 }
+const folder: string = 'posts'
 export const getStaticProps: GetStaticProps = async () =>  {
-  const allPostsData =  await getSortedPostsData()
+  const allPostsData =  await getSortedPostsData(folder)
   return {
     props: {
       allPostsData

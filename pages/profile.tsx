@@ -1,6 +1,6 @@
 
 import Layout from '../components/layout'
-import { getProfileData } from '../lib/profile'
+import { getPostData } from '../lib/posts'
 
 
 
@@ -16,11 +16,11 @@ interface Post{
   index: number,
   contentHtml: any
 }
-
-
+const id: string = 'profile'
+const folder: string = 'profile'
 export async function getStaticProps(){
 
-  const data = await getProfileData("profile")
+  const data = await getPostData(id,folder)
 
   if(!data){
     return {

@@ -4,12 +4,13 @@ import matter from 'gray-matter'
 import remark from 'remark'
 import html from 'remark-html'
 
-const postsDirectory = path.join(process.cwd(), 'posts')
 
 
 
-export async function getSortedPostsData() {
+
+export async function getSortedPostsData(folder: string) {
   // Get file names under /posts
+  const postsDirectory = path.join(process.cwd(), folder?folder:'posts')
   const fileNames = await fs.readdirSync(postsDirectory)
   const allPostsData = fileNames.map(fileName => {
     // Remove ".md" from file name to get id
@@ -43,7 +44,8 @@ export async function getSortedPostsData() {
     }
   })
 }
-export function getAllPostIds() {
+export function getAllPostIds(folder: string) {
+  const postsDirectory = path.join(process.cwd(), folder?folder:'posts')
     const fileNames = fs.readdirSync(postsDirectory)
   
     // Returns an array that looks like this:
@@ -68,7 +70,8 @@ export function getAllPostIds() {
     })
   }
 
-  export async function getPostData(id: string) {
+  export async function getPostData(id: string, folder: string) {
+    const postsDirectory = path.join(process.cwd(), folder?folder:'posts')
     const fullPath = path.join(postsDirectory, `${id}.md`)
     const fileContents = fs.readFileSync(fullPath, 'utf8')
   

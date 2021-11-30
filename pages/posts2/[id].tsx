@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 import utilStyles from '../../styles/utils.module.css'
 
-import { getAllPosts2Ids, getPosts2Data } from '../../lib/posts2'
+import { getAllPostIds, getPostData } from '../../lib/posts'
 
 interface staticProps{
   params: any
@@ -12,9 +12,10 @@ interface staticProps{
 interface postProps{
   postData: any
 }
+const folder: string = 'posts2'
 
 export async function getStaticProps({ params }: staticProps) {
-  const postData = await getPosts2Data(params.id)
+  const postData = await getPostData(params.id, folder)
   return {
     props: {
       postData
@@ -23,7 +24,7 @@ export async function getStaticProps({ params }: staticProps) {
 }
 
 export async function getStaticPaths() {
-    const paths = getAllPosts2Ids()
+    const paths = getAllPostIds(folder)
     return {
       paths,
       fallback: false
