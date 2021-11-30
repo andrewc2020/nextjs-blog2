@@ -5,6 +5,7 @@ import utilStyles from '../../styles/utils.module.css'
 
 import { getAllPostIds, getPostData } from '../../lib/posts'
 
+
 interface staticProps{
   params: any
 }
