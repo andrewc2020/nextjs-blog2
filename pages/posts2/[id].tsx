@@ -4,14 +4,9 @@ import Head from 'next/head'
 import utilStyles from '../../styles/utils.module.css'
 
 import { getAllPostIds, getPostData } from '../../lib/posts'
+import { staticProps, postProps} from '../../lib/types'
 
-interface staticProps{
-  params: any
-}
 
-interface postProps{
-  postData: any
-}
 const folder: string = 'posts2'
 
 export async function getStaticProps({ params }: staticProps) {

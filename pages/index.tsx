@@ -7,12 +7,10 @@ import { GetStaticProps} from 'next'
 
 import React, { useState, useEffect } from 'react';
 
+import { Post } from '../lib/types'
 
-type Post = {
-  id: string,
-  index: number,
-  title: string
-}
+
+
 const folder: string = 'posts'
 export const getStaticProps: GetStaticProps = async () =>  {
   const allPostsData =  await getSortedPostsData(folder)
