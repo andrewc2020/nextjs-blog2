@@ -26,7 +26,7 @@ export default function Layout({ children, home }: Props) {
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="Facilitateur et Consultant en langue anglaise"
           
         />
         <meta
@@ -60,7 +60,7 @@ export default function Layout({ children, home }: Props) {
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
             </h1>
-            <Mailto email="someone@somewhere.com" subject="Salut" body="Salut Glyn,">Contactez moi</Mailto>
+            <Mailto email="someone@somewhere.com" subject="Salut" body="Tapez%20%0Avotre%20message%20ici%0A">Contactez moi</Mailto>
             <small>pour les tarifs et conditions</small>
           </>
         ) : (
@@ -82,7 +82,7 @@ export default function Layout({ children, home }: Props) {
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
             </h2>
-            <Mailto email="someone@somewhere.com" subject="Salut" body="Salut Glyn,">Contactez moi</Mailto>
+            <Mailto email="someone@somewhere.com" subject="Salut" body="Tapez%20votre%0Amessage%20ici%0A">Contactez moi</Mailto>
             <small>pour les tarifs et conditions</small>
           </>
         )}
