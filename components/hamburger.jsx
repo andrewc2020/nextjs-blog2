@@ -1,7 +1,10 @@
 import hamburgerstyles from './hamburger.module.css'
 import Link from 'next/link'
+import React, { useState, useEffect } from 'react';
 
 export const Hamburger = () =>{
+
+    
   
   const handleClick = (e) => {
     e.preventDefault()
@@ -10,6 +13,16 @@ export const Hamburger = () =>{
         x.style.display = "none";
     } else {
         x.style.display = "block";
+    }
+
+    const handleMenu = (e) =>{
+        let links = document.getElementById("myLinks");
+    if (links.style.display === "block") {
+        links.style.display = "none";
+    } else {
+        links.style.display = "block";
+    }
+
     }
 
     
@@ -25,10 +38,24 @@ export const Hamburger = () =>{
   </Link>
  
   <div id="myLinks" className={hamburgerstyles.hidden}>
-  
-   
+        
+  <Link href="/posts/accompagnateur" >
+    <a onClick={(e) => handleMenu(e)}>Projets </a>
+    </Link>
+    <Link href="/posts/misenforme" >
+    <a onClick={(e) => handleMenu(e)}>Publication </a>
+    </Link>
+    <Link href="/posts/accueildesclients" >
+    <a onClick={(e) => handleMenu(e)}>Accueil clients</a>
+    </Link>
+    <Link href="/posts/cours" >
+    <a onClick={(e) => handleMenu(e)}>Cours d’anglais</a>
+    </Link>
+    <Link href="/posts/workingholiday" >
+    <a onClick={(e) => handleMenu(e)}>Working Holiday</a>
+    </Link>
     <Link href="/profile">
-    <a>à propos de moi </a>
+    <a>A propos de moi </a>
     </Link>
   </div>
             <Link href="javascript:void(0);">

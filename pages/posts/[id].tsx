@@ -4,9 +4,12 @@ import Head from 'next/head'
 import utilStyles from '../../styles/utils.module.css'
 
 import { getAllPostIds, getPostData } from '../../lib/posts'
+import { staticProps, postProps} from '../../lib/types'
 
-export async function getStaticProps({ params }) {
-  const postData = await getPostData(params.id)
+const folder: string = 'posts'
+
+export async function getStaticProps({ params }: staticProps) {
+  const postData = await getPostData(params.id, folder)
   return {
     props: {
       postData
@@ -15,14 +18,14 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-    const paths = getAllPostIds()
+    const paths = getAllPostIds(folder)
     return {
       paths,
       fallback: false
     }
   }
 
-  export default function Post({ postData }) {
+  export default function Post({ postData }: postProps) {
     return (
       <Layout home={false}>
         <Head>

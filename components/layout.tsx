@@ -3,15 +3,24 @@ import Image from 'next/image'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
-import Mailto from '../components/mailto'
-import {Hamburger} from '../components/hamburger'
+import Mailto from './mailto'
+import {Hamburger} from './hamburger'
+import {FC} from 'react'
 
 const name = 'Glyn'
 export const siteTitle = 'Next.js Sample Website'
 
-export default function Layout({ children, home }) {
+interface Props {
+  // any props that come into the component
+  children: any,
+  home: boolean
+}
+
+export default function Layout({ children, home }: Props) {
+  
+
   return (
-    <div className={styles.container}>
+    <div >
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
@@ -31,6 +40,7 @@ export default function Layout({ children, home }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Hamburger />
+     <div className={styles.container}>
       <header className={styles.header}>
         {home ? (
           <>
@@ -77,6 +87,7 @@ export default function Layout({ children, home }) {
           </>
         )}
       </header>
+      
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
@@ -85,6 +96,8 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
       )}
+      </div>
     </div>
   )
+ 
 }

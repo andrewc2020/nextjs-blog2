@@ -8,7 +8,7 @@
     ],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": false,
+    "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -23,7 +23,7 @@
     "**/*.ts",
     "**/*.tsx",
     "**/*.css",
-    "additional.d.ts", "lib/posts.js"
+    "additional.d.ts", "lib/posts.ts"
   ],
   "exclude": [
     "node_modules"

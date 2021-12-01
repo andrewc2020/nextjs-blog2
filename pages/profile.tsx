@@ -1,18 +1,19 @@
 
 import Layout from '../components/layout'
-import { getProfileData } from '../lib/profile'
+import { getPostData } from '../lib/posts'
+import { postProps } from '../lib/types'
 
 
 
 
 
-
-
+const id: string = 'profile'
+const folder: string = 'profile'
 export async function getStaticProps(){
 
-  const data = await getProfileData("profile")
+  const postData = await getPostData(id,folder)
 
-  if(!data){
+  if(!postData){
     return {
       redirect: {
         destination: '/',
@@ -21,7 +22,7 @@ export async function getStaticProps(){
     }
   }
   return {
-    props: { data },
+    props: { postData },
   }
 
 }
@@ -29,8 +30,8 @@ export async function getStaticProps(){
 
 
 
-export default function Profile({data}) {
+export default function Profile({postData}:postProps) {
 
     
-    return <Layout home={false}> <h2>{ data.title }</h2><article><div dangerouslySetInnerHTML={{ __html: data.contentHtml }} /></article></Layout>
+    return <Layout home={false}> <h2>{ postData.title }</h2><article><div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} /></article></Layout>
 }
