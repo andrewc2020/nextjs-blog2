@@ -57,10 +57,11 @@ export default function Layout({ children, home }: Props) {
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
             </h1>
-            <h2  className={utilStyles.headingMd}>Facilitateur et Consultant en Anglais</h2>
+            <div className= {utilStyles.centred}>
+            <h2  className={utilStyles.headingSm}>Facilitateur et Consultant en Anglais</h2>
             
             <Mailto email="someone@somewhere.com" subject="Salut" body="Tapez%20%0Avotre%20message%20ici%0A">Contactez moi</Mailto>
-            {/* <small>pour les tarifs et conditions</small> */}
+           </div>
           </>
         ) : (
           <>
@@ -75,9 +76,10 @@ export default function Layout({ children, home }: Props) {
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
             </h2>
-            <h2  className={utilStyles.headingMd}>Facilitateur et Consultant en Anglais</h2>
+            <div className= {utilStyles.centred}>
+            <h2  className={utilStyles.headingSm}>Facilitateur et Consultant en Anglais</h2>
             <Mailto email="someone@somewhere.com" subject="Salut" body="Tapez%20votre%0Amessage%20ici%0A">Contactez moi</Mailto>
-            {/* <small>pour les tarifs et conditions</small> */}
+           </div>
           </>
         )}
       </header>
