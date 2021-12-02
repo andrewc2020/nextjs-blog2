@@ -71,7 +71,7 @@ export default function Layout({ children, home }: Props) {
           <>
             <Link href="/">
               <a>
-              <IKimage />
+              <IKimage  />
             {/* <Image
               priority
               src="/images/profile.jpg"
