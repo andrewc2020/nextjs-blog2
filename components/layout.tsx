@@ -6,6 +6,7 @@ import Link from 'next/link'
 import Mailto from './mailto'
 import {Hamburger} from './hamburger'
 import {FC} from 'react'
+import {IKimage} from '../components/image'
 
 const name = 'Glyn'
 export const siteTitle = 'Next.js Sample Website'
@@ -48,14 +49,15 @@ export default function Layout({ children, home }: Props) {
           <>
            <Link href="/profile">
               <a>
-            <Image
+            <IKimage />
+            {/* <Image
               priority
               src="/images/profile.jpg"
               
               height={144}
               width={130}
               alt={name}
-            />
+            /> */}
             </a>
             </Link>
             <h1 className={utilStyles.heading2Xl}><Link href="/profile">
@@ -69,14 +71,15 @@ export default function Layout({ children, home }: Props) {
           <>
             <Link href="/">
               <a>
-                <Image
-                  priority
-                  src="/images/profile.jpg"
-                  
-                  height={108}
-                  width={100}
-                  alt={name}
-                />
+              <IKimage />
+            {/* <Image
+              priority
+              src="/images/profile.jpg"
+              
+              height={144}
+              width={130}
+              alt={name}
+            /> */}
               </a>
             </Link>
             <h2 className={utilStyles.headingLg}>
