@@ -7,6 +7,7 @@ import { postProps } from '../lib/types'
 
 
 
+
 const id: string = 'profile'
 const folder: string = 'profile'
 export async function getStaticProps(){

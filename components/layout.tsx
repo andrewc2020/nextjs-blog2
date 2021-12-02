@@ -6,6 +6,7 @@ import Link from 'next/link'
 import Mailto from './mailto'
 import {Hamburger} from './hamburger'
 import {FC} from 'react'
+import {IKimage} from '../components/image'
 
 const name = 'Glyn'
 export const siteTitle = 'Next.js Sample Website'
@@ -48,35 +49,26 @@ export default function Layout({ children, home }: Props) {
           <>
            <Link href="/profile">
               <a>
-            <Image
-              priority
-              src="/images/profile.jpg"
-              
-              height={144}
-              width={130}
-              alt={name}
-            />
+            <IKimage />
+            
             </a>
             </Link>
             <h1 className={utilStyles.heading2Xl}><Link href="/profile">
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
             </h1>
+            <div className= {utilStyles.centred}>
+            <h2  className={utilStyles.headingSm}>Facilitateur et Consultant en Anglais</h2>
+            
             <Mailto email="someone@somewhere.com" subject="Salut" body="Tapez%20%0Avotre%20message%20ici%0A">Contactez moi</Mailto>
-            <small>pour les tarifs et conditions</small>
+           </div>
           </>
         ) : (
           <>
             <Link href="/">
               <a>
-                <Image
-                  priority
-                  src="/images/profile.jpg"
-                  
-                  height={108}
-                  width={100}
-                  alt={name}
-                />
+              <IKimage  />
+           
               </a>
             </Link>
             <h2 className={utilStyles.headingLg}>
@@ -84,8 +76,10 @@ export default function Layout({ children, home }: Props) {
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
             </h2>
+            <div className= {utilStyles.centred}>
+            <h2  className={utilStyles.headingSm}>Facilitateur et Consultant en Anglais</h2>
             <Mailto email="someone@somewhere.com" subject="Salut" body="Tapez%20votre%0Amessage%20ici%0A">Contactez moi</Mailto>
-            <small>pour les tarifs et conditions</small>
+           </div>
           </>
         )}
       </header>
