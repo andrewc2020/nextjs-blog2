@@ -50,36 +50,24 @@ export default function Layout({ children, home }: Props) {
            <Link href="/profile">
               <a>
             <IKimage />
-            {/* <Image
-              priority
-              src="/images/profile.jpg"
-              
-              height={144}
-              width={130}
-              alt={name}
-            /> */}
+            
             </a>
             </Link>
             <h1 className={utilStyles.heading2Xl}><Link href="/profile">
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
             </h1>
+            <h2  className={utilStyles.headingMd}>Facilitateur et Consultant en Anglais</h2>
+            
             <Mailto email="someone@somewhere.com" subject="Salut" body="Tapez%20%0Avotre%20message%20ici%0A">Contactez moi</Mailto>
-            <small>pour les tarifs et conditions</small>
+            {/* <small>pour les tarifs et conditions</small> */}
           </>
         ) : (
           <>
             <Link href="/">
               <a>
               <IKimage  />
-            {/* <Image
-              priority
-              src="/images/profile.jpg"
-              
-              height={144}
-              width={130}
-              alt={name}
-            /> */}
+           
               </a>
             </Link>
             <h2 className={utilStyles.headingLg}>
@@ -87,8 +75,9 @@ export default function Layout({ children, home }: Props) {
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
             </h2>
+            <h2  className={utilStyles.headingMd}>Facilitateur et Consultant en Anglais</h2>
             <Mailto email="someone@somewhere.com" subject="Salut" body="Tapez%20votre%0Amessage%20ici%0A">Contactez moi</Mailto>
-            <small>pour les tarifs et conditions</small>
+            {/* <small>pour les tarifs et conditions</small> */}
           </>
         )}
       </header>

@@ -59,8 +59,8 @@ export const Hamburger = () =>{
     </Link>
   </div>
             <Link href="javascript:void(0);">
-                <a  className={hamburgerstyles.icon} onClick={(e) => handleClick(e)} >
-                    <i className="fa fa-bars" alt="hamburger icon"></i>
+                <a name="hamburger_icon" className={hamburgerstyles.icon} onClick={(e) => handleClick(e)} >
+                    <i id="hamburger" className="fa fa-bars" alt="hamburger icon"></i>
                 </a>
             </Link>
 </div>
