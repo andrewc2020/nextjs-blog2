@@ -2,6 +2,7 @@
 import Layout from '../components/layout'
 import { getPostData } from '../lib/posts'
 import { postProps } from '../lib/types'
+import { imageKitLoader, MyImage } from '../components/nextimage'
 
 
 
@@ -34,5 +35,5 @@ export async function getStaticProps(){
 export default function Profile({postData}:postProps) {
 
     
-    return <Layout home={false}> <h2>{ postData.title }</h2><article><div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} /></article></Layout>
+    return <Layout home={false}> <h2>{ postData.title }</h2><MyImage loader="" /><article><div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} /></article></Layout>
 }
