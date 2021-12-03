@@ -16,11 +16,11 @@ export function imageKitLoader({ src, width, quality }: ImageLoaderProps){
   if (quality) {
     params.push(`q-${quality || 75}`);
   }
-  console.log('passed ' + width)
+ 
   const paramsString = params.join(",");
   var urlEndpoint = "https://ik.imagekit.io/eudt3rlpetf/";
   if(urlEndpoint[urlEndpoint.length-1] === "/") urlEndpoint = urlEndpoint.substring(0, urlEndpoint.length - 1);
-  console.log(`${urlEndpoint}/${src}?tr=${paramsString}`)
+ 
   return `${urlEndpoint}/${src}?tr=${paramsString}`
 }
 
