@@ -4,7 +4,7 @@ test('clicking of Facilitateur in profile should return to list of services', as
 
     await page.goto('/profile')
     // Find an element with the text 'Glyn' and click on it
-    await page.click('text=Facilitateur')
+    await page.click('text=Retournez')
 
     await expect(page).toHaveURL('/#services')
 

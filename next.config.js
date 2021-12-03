@@ -4,5 +4,9 @@ module.exports = {
       locales: ["fr"],
       defaultLocale: "fr",
     },
-    tsconfigPath:"./"
+    tsconfigPath:"./",
+    images: {
+      loader: 'custom',
+      path: 'https://ik.imagekit.io/eudt3rlpetf/',
+    },
   };

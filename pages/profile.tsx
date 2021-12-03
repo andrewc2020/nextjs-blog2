@@ -14,6 +14,7 @@ const folder: string = 'profile'
 export async function getStaticProps(){
 
   const postData = await getPostData(id,folder)
+ 
 
   if(!postData){
     return {
@@ -24,7 +25,8 @@ export async function getStaticProps(){
     }
   }
   return {
-    props: { postData },
+    props: { postData }
+    
   }
 
 }
@@ -33,7 +35,7 @@ export async function getStaticProps(){
 
 
 export default function Profile({postData}:postProps) {
-
+  
     
-    return <Layout home={false}> <h2>{ postData.title }</h2><MyImage loader="" /><article><div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} /></article></Layout>
+    return <Layout home={false}> <h2>{ postData.title }</h2><MyImage alt="beautiful building" src="default-image.jpg" loader={imageKitLoader({src:"/default-image.jpg", width:200})} /><article><div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} /></article></Layout>
 }
