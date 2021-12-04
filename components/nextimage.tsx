@@ -7,7 +7,11 @@ type props = {
 
     src: string,
     loader: any,
-    alt: string
+    alt: string,
+    width: number,
+    height: number
+
+
 }
 
 export function imageKitLoader({ src, width, quality }: ImageLoaderProps){
@@ -18,7 +22,8 @@ export function imageKitLoader({ src, width, quality }: ImageLoaderProps){
   }
  
   const paramsString = params.join(",");
-  var urlEndpoint = "https://ik.imagekit.io/eudt3rlpetf/";
+  let urlEndpoint = "https://ik.imagekit.io/eudt3rlpetf/";
+ 
   if(urlEndpoint[urlEndpoint.length-1] === "/") urlEndpoint = urlEndpoint.substring(0, urlEndpoint.length - 1);
  
   return `${urlEndpoint}/${src}?tr=${paramsString}`
@@ -30,8 +35,8 @@ export const MyImage = (props: props) => {
       loader={imageKitLoader}
       src= {props.src}
       alt= {props.alt}
-      width={400}
-      height={400}
+      width={props.width}
+      height={props.height}
     />
   );
 };

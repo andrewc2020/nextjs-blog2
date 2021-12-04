@@ -50,7 +50,7 @@ export default function Layout({ children, home }: Props) {
           <>
            <Link href="/profile">
               <a>
-              <MyImage alt="Glyn" src="profile_4.jpg" loader={imageKitLoader({src:"/profile_4.jpg", width:200})} />
+              <MyImage width={150} height={200} alt={"Glyn"} src={"profile_4.jpg"} loader={imageKitLoader({src:"/profile_4.jpg", width:200})} />
             
             </a>
             </Link>
@@ -68,7 +68,7 @@ export default function Layout({ children, home }: Props) {
           <>
             <Link href="/">
               <a>
-              <MyImage alt="Glyn" src="profile_4.jpg" loader={imageKitLoader({src:"/profile_4.jpg", width:200})} />
+              <MyImage width={150} height={200} alt={"Glyn"} src="profile_4.jpg" loader={imageKitLoader({src:"/profile_4.jpg", width:200})} />
            
               </a>
             </Link>
