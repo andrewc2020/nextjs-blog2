@@ -37,5 +37,5 @@ export async function getStaticProps(){
 export default function Profile({postData}:postProps) {
   
     
-    return <Layout home={false}> <h2>{ postData.title }</h2><div id="imageframe"><MyImage width={200} src={'default-image.jpg'} loader={imageKitLoader({src:"/default-image.jpg", width:200,  quality:50})} alt={'beautiful building'} height={300} /></div><article><div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} /></article></Layout>
+    return <Layout home={false}> <h2>{ postData.title }</h2><article><div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} /></article></Layout>
 }
