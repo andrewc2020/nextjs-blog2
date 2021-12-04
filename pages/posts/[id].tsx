@@ -32,7 +32,7 @@ export async function getStaticPaths() {
           <title>{postData.title}</title>
         </Head>
         <article>
-          <h1 className={utilStyles.headingMd}>{postData.title}</h1>
+          <h2>{postData.title}</h2>
           <div className={ `${utilStyles.lightText} ${utilStyles.hidden}`}>
             {postData.index}
           </div>

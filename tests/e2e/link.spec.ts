@@ -10,5 +10,5 @@ test('should navigate to the profile page', async ({ page }) => {
     // The new url should be "/profile" (baseURL is used there)
     await expect(page).toHaveURL('/profile')
     // The new page should contain an h1 with "Profil"
-    await expect(page.locator('h2.utils_headingLg__de7p0')).toContainText('Glyn')
+    await expect(page.locator('h1')).toContainText('Glyn')
   })

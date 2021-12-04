@@ -18,7 +18,7 @@ immunologie, cardiologie, ophtalmologie, Recherche scientifique : données scien
 biologie, géologie, Carénage de bateaux, Industrie automobile : générateurs de gaz (inflators)
 ...
 
-***Centres d'Intérêt:***
+## Centres d'Intérêt:
 
 - Activités en plein air : Randonnées, vélo, pêche et balade en mer
 - Photographie
@@ -28,7 +28,7 @@ biologie, géologie, Carénage de bateaux, Industrie automobile : générateurs 
 - Nouvelle technologies
 
 
-**Depuis 2021**
+## Depuis 2021
 Auto Entrepreneur
 
 [**Facilitateur et Consultant en langue anglaise**](/#services)

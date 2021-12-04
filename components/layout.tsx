@@ -5,8 +5,9 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Mailto from './mailto'
 import {Hamburger} from './hamburger'
-import {FC} from 'react'
+
 import {IKimage} from '../components/image'
+import { imageKitLoader, MyImage } from '../components/nextimage'
 
 const name = 'Glyn'
 export const siteTitle = 'Next.js Sample Website'
@@ -49,16 +50,16 @@ export default function Layout({ children, home }: Props) {
           <>
            <Link href="/profile">
               <a>
-            <IKimage />
+              <MyImage width={150} height={200} alt={"Glyn"} src={"profile_4.jpg"} loader={imageKitLoader({src:"/profile_4.jpg", width:200})} />
             
             </a>
             </Link>
-            <h1 className={utilStyles.heading2Xl}><Link href="/profile">
+            <h1><Link href="/profile">
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
             </h1>
             <div className= {utilStyles.centred}>
-            <h2  className={utilStyles.headingSm}>Facilitateur et Consultant en Anglais</h2>
+            <h2>Facilitateur et Consultant en Anglais</h2>
             
             <Mailto email="someone@somewhere.com" subject="Salut" body="Tapez%20%0Avotre%20message%20ici%0A">Contactez moi</Mailto>
            </div>
@@ -67,17 +68,17 @@ export default function Layout({ children, home }: Props) {
           <>
             <Link href="/">
               <a>
-              <IKimage  />
+              <MyImage width={150} height={200} alt={"Glyn"} src="profile_4.jpg" loader={imageKitLoader({src:"/profile_4.jpg", width:200})} />
            
               </a>
             </Link>
-            <h2 className={utilStyles.headingLg}>
+            <h1>
               <Link href="/">
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
-            </h2>
+            </h1>
             <div className= {utilStyles.centred}>
-            <h2  className={utilStyles.headingSm}>Facilitateur et Consultant en Anglais</h2>
+            <h2>Facilitateur et Consultant en Anglais</h2>
             <Mailto email="someone@somewhere.com" subject="Salut" body="Tapez%20votre%0Amessage%20ici%0A">Contactez moi</Mailto>
            </div>
           </>
