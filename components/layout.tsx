@@ -3,7 +3,6 @@ import Image from 'next/image'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
-import Mailto from './mailto'
 import {Hamburger} from './hamburger'
 
 import {IKimage} from '../components/image'
@@ -50,7 +49,7 @@ export default function Layout({ children, home }: Props) {
           <>
            <Link href="/profile">
               <a>
-              <MyImage width={150} height={200} alt={"Glyn"} src={"profile_4.jpg"} loader={imageKitLoader({src:"/profile_4.jpg", width:200})} />
+              <MyImage width={100} height={125} alt={"Glyn"} src={"profile_4.jpg"} loader={imageKitLoader({src:"/profile_4.jpg", width:200})} />
             
             </a>
             </Link>
@@ -61,14 +60,14 @@ export default function Layout({ children, home }: Props) {
             <div className= {utilStyles.centred}>
             <h2>Facilitateur et Consultant en Anglais</h2>
             
-            <Mailto email="someone@somewhere.com" subject="Salut" body="Tapez%20%0Avotre%20message%20ici%0A">Contactez moi</Mailto>
+           
            </div>
           </>
         ) : (
           <>
             <Link href="/">
               <a>
-              <MyImage width={150} height={200} alt={"Glyn"} src="profile_4.jpg" loader={imageKitLoader({src:"/profile_4.jpg", width:200})} />
+              <MyImage width={100} height={125} alt={"Glyn"} src="profile_4.jpg" loader={imageKitLoader({src:"/profile_4.jpg", width:200})} />
            
               </a>
             </Link>
@@ -79,7 +78,7 @@ export default function Layout({ children, home }: Props) {
             </h1>
             <div className= {utilStyles.centred}>
             <h2>Facilitateur et Consultant en Anglais</h2>
-            <Mailto email="someone@somewhere.com" subject="Salut" body="Tapez%20votre%0Amessage%20ici%0A">Contactez moi</Mailto>
+         
            </div>
           </>
         )}
