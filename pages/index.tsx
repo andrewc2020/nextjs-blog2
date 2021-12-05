@@ -82,7 +82,7 @@ export default function Home({ allPostsData}: any) {
       {!isServices?(
       <Link href='javascript:void(0)'>
 
-        <a id='showhide' className={utilStyles.padding1px} onClick={(e) => handleClick(e)}>{isShow && !isServices?'masquer services':'services'}</a>
+        <a id='showhide'  onClick={(e) => handleClick(e)}>{isShow && !isServices?'masquer services':'services'}</a>
      
       </Link>
   ):(<p/>)}
@@ -90,7 +90,7 @@ export default function Home({ allPostsData}: any) {
       {/* <h2>en langue anglaise</h2> */}
       {/* Add this <section> tag below the existing <section> tag */}
       <p/>
-      <section id='services' className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${utilStyles.hidden}`}>
+      <section id='services' className={`${utilStyles.headingMd}  ${utilStyles.hidden}`}>
       
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, index, title }: Post) => (
