@@ -86,7 +86,7 @@ export default function Home({ allPostsData}: any) {
      
       </Link>
   ):(<p/>)}
-      </div>
+      
       {/* <h2>en langue anglaise</h2> */}
       {/* Add this <section> tag below the existing <section> tag */}
       <p/>
@@ -96,7 +96,7 @@ export default function Home({ allPostsData}: any) {
           {allPostsData.map(({ id, index, title }: Post) => (
            <li   key={id}>
            <Link href={`/posts/${id}`}>
-             <a ><small>{title}.</small></a>
+             <a ><small>{title}</small></a>
            </Link>
         
            <small className={ `${utilStyles.lightText} ${utilStyles.hidden}`}>
@@ -106,6 +106,7 @@ export default function Home({ allPostsData}: any) {
           ))}
         </ul>
       </section>
+      </div>
     </Layout>
   )
 }

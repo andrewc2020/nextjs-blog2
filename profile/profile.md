@@ -9,16 +9,15 @@ anglaise.
 Co dirigeant de l’établissement ENGLISH APART jusque 2020.
 Formateur en langue anglaise et coach auprès des professionnels ***Scientifiques, Commerciaux et
 Techniques***.
-Expérience dans des domaines pluri disciplinaires : Contrôle aérien, Groupes électrogènes, Energies
-renouvelables, Domaine médical : immunologie, cardiologie, ophtalmologie, Recherche scientifique :
-données scientifiques, biologie, géologie, Carénage de bateaux, Industrie automobile : générateurs de gaz (inflators) ...
+Expérience dans des domaines pluri disciplinaires : Contrôle aérien, Groupes électrogènes, Energies renouvelables, Domaine médical : immunologie, cardiologie, ophtalmologie, Recherche scientifique : données scientifiques, biologie, géologie, Carénage de bateaux, Industrie automobile : générateurs de gaz (inflators) ...
 
 ## Centres d'Intérêt
 
-- Activités en plein air : Randonnées, vélo, pêche et balade en mer
+- Activités en plein air :
+  - Randonnées, vélo, pêche et balade en mer
 - Photographie
 - Musique
-- OEnologie
+- Œnologie
 - Histoire
 - Nouvelle technologies
 

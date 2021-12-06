@@ -7,6 +7,7 @@ index: 3.3
 - Visites de la région et de sites touristiques en voiture ou en balade à pied.
 - Visite préliminaire avant installation en Bretagne.
 - Excursion dans le PARC MARIN (découverte de la faune et la flore), visite des îles :
+
 > Ouessant et Molène.
 
-[← Retournez chez Accueil des Collaborateurs et Clients](/posts/accueildesclients) 
+[← Retournez chez Accueil des Collaborateurs et Clients](/posts/accueildesclients)
