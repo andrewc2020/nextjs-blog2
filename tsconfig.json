@@ -24,7 +24,7 @@
     "**/*.tsx",
     "**/*.css",
     "additional.d.ts", "lib/posts.ts"
-, "jest.setup.ts"  ],
+, "jest.setup.ts", "components/Bar.jsx"  ],
   "exclude": [
     "node_modules"
   ]

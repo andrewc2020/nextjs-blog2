@@ -1,8 +1,9 @@
 import React from 'react';
-import { shallow, render, configure } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
+import { shallow, mount, render, configure } from 'enzyme';
+import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 
 import Foo from '../../components/Foo';
+import Bar from '../../components/Bar'
 
 beforeAll( function(){
   configure({ adapter: new Adapter() })
@@ -17,9 +18,9 @@ describe('A suite', function() {
     expect(shallow(<Foo />).is('.foo')).toBe(true);
   });
 
-  // it('should mount in a full DOM', function() {
-  //   expect(mount(<Foo />).find('.foo').length).toBe(1);
-  // });
+  it('should mount in a full DOM', function() {
+    expect(mount(<Bar />).find('.foo').length).toBe(1);
+  });
 
   it('should render to static HTML', function() {
     expect(render(<Foo />).text()).toEqual('Bar');
