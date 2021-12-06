@@ -13,7 +13,8 @@ Expérience dans des domaines pluri disciplinaires : Contrôle aérien, Groupes 
 
 ## Centres d'Intérêt
 
-- Activités en plein air : Randonnées, vélo, pêche et balade en mer
+- Activités en plein air :
+  - Randonnées, vélo, pêche et balade en mer
 - Photographie
 - Musique
 - Œnologie
