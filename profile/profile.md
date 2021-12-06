@@ -18,7 +18,7 @@ données scientifiques, biologie, géologie, Carénage de bateaux, Industrie aut
 - Activités en plein air : Randonnées, vélo, pêche et balade en mer
 - Photographie
 - Musique
-- OEnologie
+- Œnologie
 - Histoire
 - Nouvelle technologies
 
