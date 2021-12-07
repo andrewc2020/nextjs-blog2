@@ -9,13 +9,22 @@ export const Hamburger = () =>{
 
     
   
-  const handleClick = (e, prevent) => {
-    prevent?e.preventDefault():''
-    var x = document.getElementById("myLinks");
+  const handleClick = (e) => {
+    e.preventDefault()
+    let x = document.getElementById("myLinks");
     if (x.style.display === "block") {
         x.style.display = "none";
     } else {
         x.style.display = "block";
+    }
+
+    const handleMenu = (e) =>{
+      let y = document.getElementById("myLinks");
+      if (y.style.display === "block") {
+          y.style.display = "none";
+      } else {
+          y.style.display = "block";
+      }
     }
 
     
@@ -39,31 +48,31 @@ export const Hamburger = () =>{
     
     </Link>     
   <Link href="/posts/accompagnateur" >
-    <a onClick={(e) => handleClick(e, false)}>Projets </a>
+    <a onClick={() =>handleMenu()}>Projets </a>
     </Link>
     <Link href="/posts/misenforme" >
-    <a onClick={(e) => handleClick(e, false)}>Corrections</a>
+    <a onClick={() =>handleMenu()}>Corrections</a>
     </Link>
     <Link href="/posts/accueildesclients" >
-    <a onClick={(e) => handleClick(e, false)}>Accompagnement clients / collaborateurs</a>
+    <a onClick={(e) =>handleMenu()}>Accompagnement clients / collaborateurs</a>
     </Link>
     <Link href="/posts/cours" >
-    <a onClick={(e) => handleClick(e, false)}>Cours d’anglais</a>
+    <a onClick={(e) => handleMenu(e)}>Cours d’anglais</a>
     </Link>
     <Link href="/posts/workingholiday" >
-    <a onClick={(e) => handleClick(e, false)}>Working Holiday</a>
+    <a onClick={(e) =>handleMenu(e)}>Working Holiday</a>
     </Link>
     <Link href="javascript:void(0);" >
     <Mailto email="someone@somewhere.com" subject="Salut" body="Tapez%20%0Avotre%20message%20ici%0A">Contact</Mailto>
     </Link>
     <Link href="/posts/tarifs" >
-    <a onClick={(e) => handleClick(e)}>Tarifs</a>
+    <a onClick={(e) => handleMenu(e)}>Tarifs</a>
    
     </Link>
    
   </div>
             <Link href="javascript:void(0);">
-                <a name="hamburger_icon" className={hamburgerstyles.icon} onClick={(e) => handleClick(e, true)} >
+                <a name="hamburger_icon" className={hamburgerstyles.icon} onClick={(e) => handleClick(e)} >
                     <i id="hamburger" className="fa fa-bars" alt="hamburger icon"></i>
                 </a>
             </Link>
