@@ -1,5 +1,5 @@
 ---
-title: 'Mises en forme et corrections de publications'
+title: 'Mise en forme et corrections de publications'
 index: 2
 ---
 
