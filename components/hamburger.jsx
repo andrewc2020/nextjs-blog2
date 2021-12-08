@@ -66,7 +66,7 @@ export const Hamburger = () =>{
     <Mailto email="someone@somewhere.com" subject="Salut" body="Tapez%20%0Avotre%20message%20ici%0A">Contact</Mailto>
     </Link>
     <Link href="/posts/tarifs" >
-    <a onClick={(e) => handleMenu(e)}>Tarifs</a>
+    <a onClick={(e) => handleMenu(e)}><Tooltip content="I'm a tooltip!">Tarifs</Tooltip></a>
    
     </Link>
    
