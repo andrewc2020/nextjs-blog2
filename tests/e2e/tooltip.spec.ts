@@ -1,12 +1,15 @@
 import {test, expect} from '@playwright/test'
 
-test('tooltip should be rendered as a span with existing text', async({page})=>{
+test('tooltip should be rendered', async({page})=>{
     await page.goto('/')
     const location = page.locator("text=Tarifs6 >> a")
-    await location.hover().then(() =>{
+    await location.focus().then(() =>{
         
+        page.mouse;
         
-            expect(page.locator('.tooltip')).toHaveText("tooltip")
+
+        expect(page.locator('text="I\'m a tooltip!"')).toBeTruthy()
+            
     
         
     
