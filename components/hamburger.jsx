@@ -2,6 +2,8 @@ import hamburgerstyles from './hamburger.module.css'
 import Link from 'next/link'
 import React, { useState, useEffect } from 'react';
 import Mailto from './mailto'
+import Tooltip from './tooltip'
+
 
 export const Hamburger = () =>{
 
@@ -9,7 +11,7 @@ export const Hamburger = () =>{
   
   const handleClick = (e) => {
     e.preventDefault()
-    var x = document.getElementById("myLinks");
+    let x = document.getElementById("myLinks");
     if (x.style.display === "block") {
         x.style.display = "none";
     } else {
@@ -17,14 +19,15 @@ export const Hamburger = () =>{
     }
 
     const handleMenu = (e) =>{
-        let links = document.getElementById("myLinks");
-    if (links.style.display === "block") {
-        links.style.display = "none";
-    } else {
-        links.style.display = "block";
+      let y = document.getElementById("myLinks");
+      if (y.style.display === "block") {
+          y.style.display = "none";
+      } else {
+          y.style.display = "block";
+      }
     }
 
-    }
+    
 
     
 
@@ -40,28 +43,31 @@ export const Hamburger = () =>{
  
   <div id="myLinks" className={hamburgerstyles.hidden}>
   <Link href="/profile">
+  
     <a>Profil</a>
+    
     </Link>     
   <Link href="/posts/accompagnateur" >
-    <a onClick={(e) => handleMenu(e)}>Projets </a>
+    <a onClick={() =>handleMenu()}>Projets </a>
     </Link>
     <Link href="/posts/misenforme" >
-    <a onClick={(e) => handleMenu(e)}>Corrections</a>
+    <a onClick={() =>handleMenu()}>Corrections</a>
     </Link>
     <Link href="/posts/accueildesclients" >
-    <a onClick={(e) => handleMenu(e)}>Accompagnement clients / collaborateurs</a>
+    <a onClick={(e) =>handleMenu()}>Accompagnement clients / collaborateurs</a>
     </Link>
     <Link href="/posts/cours" >
     <a onClick={(e) => handleMenu(e)}>Cours d’anglais</a>
     </Link>
     <Link href="/posts/workingholiday" >
-    <a onClick={(e) => handleMenu(e)}>Working Holiday</a>
+    <a onClick={(e) =>handleMenu(e)}>Working Holiday</a>
     </Link>
     <Link href="javascript:void(0);" >
     <Mailto email="someone@somewhere.com" subject="Salut" body="Tapez%20%0Avotre%20message%20ici%0A">Contact</Mailto>
     </Link>
     <Link href="/posts/tarifs" >
-    <a onClick={(e) => handleMenu(e)}>Tarifs</a>
+    <a onClick={(e) => handleMenu(e)}><Tooltip content="I'm a tooltip!">Tarifs</Tooltip></a>
+   
     </Link>
    
   </div>
