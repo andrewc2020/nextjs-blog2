@@ -9,7 +9,7 @@ Conciliez apprentissage et détente dans un cadre exceptionnel insert photos LE 
 Le contenu de la formation (cours et activités) seront axés sur vos centres d’intérêt : balades à pied ou en
 mer / visites touristiques...
 
-Minimum formule 3 jours.
+Formule: minimum 3 jours.
 
 ## Hébergement : 2 options
 
