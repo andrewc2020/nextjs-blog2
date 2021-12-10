@@ -1,16 +1,31 @@
 import {test, expect} from '@playwright/test'
 
-test('tooltip should be rendered', async({page})=>{
-    await page.goto('/')
-    const location = page.locator("text=Tarifs6 >> a")
-    await location.focus().then(() =>{
-        
-        page.mouse;
-        
+test.describe('tooltip e2e ',() =>{
 
-        expect(page.locator('text="I\'m a tooltip!"')).toBeTruthy()
+    test('tooltip should be rendered', async({page})=>{
+        await page.goto('/')
+    
+        
+        const location = page.locator("span:has-text('Working Holiday')")
+        await location.focus().then(() =>{
+            
+            page.mouse;
             
     
-        
+            expect(page.locator('text=Working Holiday au Conquet"')).toBeTruthy()
+            expect(page.locator('div#layers')).toBeTruthy()
+            expect(page.locator('div#layers')).toHaveCount
+            
+           
     
-})})
+            
+        
+    })
+
+   
+})
+
+
+
+
+})

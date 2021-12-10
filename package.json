@@ -18,6 +18,7 @@
     "classnames": "^2.2.6",
     "date-fns": "^2.25.0",
     "enzyme": "^3.11.0",
+    "framer-motion": "^5.4.4",
     "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
     "imagekitio-react": "^1.0.11",

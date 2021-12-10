@@ -60,13 +60,14 @@ export const Hamburger = () =>{
     <a onClick={(e) => handleMenu(e)}>Cours d’anglais</a>
     </Link>
     <Link href="/posts/workingholiday" >
-    <a onClick={(e) =>handleMenu(e)}>Working Holiday</a>
+    <a onClick={(e) =>handleMenu(e)}><Tooltip content="Working Holiday au Conquet">Working Holiday</Tooltip></a>
     </Link>
     <Link href="javascript:void(0);" >
     <Mailto email="someone@somewhere.com" subject="Salut" body="Tapez%20%0Avotre%20message%20ici%0A">Contact</Mailto>
     </Link>
+   
     <Link href="/posts/tarifs" >
-    <a onClick={(e) => handleMenu(e)}><Tooltip content="I'm a tooltip!">Tarifs</Tooltip></a>
+    <a onClick={(e) => handleMenu(e)}>Tarifs</a>
    
     </Link>
    
