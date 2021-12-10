@@ -25,10 +25,16 @@ export default function Carousel(){
              <Slide index={3}>En haut.
                  <MyImage width={400} height={325} alt={"En haut"} src={"047_9A.jpg"} loader={imageKitLoader({ src: "/047_9A.jpg", width: 400 })} />
              </Slide>
-             <Slide index={4}>Coup d'oeil.
+             <Slide index={4}>Le port.
+                 <MyImage width={400} height={325} alt={"Le Pont"} src={"a_107_BU.jpg"} loader={imageKitLoader({ src: "a_107_BU.jpg", width: 400 })} />
+             </Slide>
+             <Slide index={5}>Coup d'oeil.
                  <MyImage width={400} height={325} alt={"Coup d'oeil"} src={"DJI_0072.jpg"} loader={imageKitLoader({ src: "/DJI_0072.jpg", width: 400 })} />
              </Slide>
-             <Slide index={5}>Le Pont.
+             <Slide index={6}>Le Phare.
+                 <MyImage width={400} height={325} alt={"Le Phare"} src={"DJI_0019.jpg"} loader={imageKitLoader({ src: "/DJI_0019.jpg", width: 400 })} />
+             </Slide>
+             <Slide index={7}>Le Pont.
                  <MyImage width={400} height={325} alt={"Le Pont"} src={"I_0028.jpg"} loader={imageKitLoader({ src: "/I_0028.jpg", width: 400 })} />
              </Slide>
          </Slider>
