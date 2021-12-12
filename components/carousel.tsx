@@ -10,7 +10,7 @@ export default function Carousel(){
         <CarouselProvider
         naturalSlideWidth={400}
         naturalSlideHeight={325}
-        totalSlides={3}
+        totalSlides={9}
       >
          <Slider>
              <Slide index={0}>Le Conquet.
