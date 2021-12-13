@@ -5,7 +5,11 @@ index: 5
 
 OXYGENEZ VOTRE NIVEAU D’ANGLAIS !
 
+<<<<<<< HEAD
 Conciliez apprentissage et détente dans un cadre exceptionnel. [Cliquez pour visiter la galerie](/gallery).
+=======
+Conciliez apprentissage et détente dans un cadre exceptionnel insert photos LE CONQUET
+>>>>>>> tooltip2
 Le contenu de la formation (cours et activités) seront axés sur vos centres d’intérêt : balades à pied ou en mer / visites touristiques...
 
 Formule: minimum 3 jours.

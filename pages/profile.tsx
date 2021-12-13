@@ -2,7 +2,7 @@
 import Layout from '../components/layout'
 import { getPostData } from '../lib/posts'
 import { postProps } from '../lib/types'
-import { imageKitLoader, MyImage } from '../components/nextimage'
+
 
 
 
