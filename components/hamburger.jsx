@@ -50,19 +50,19 @@ export const Hamburger = () =>{
     
     </Link>     
   <Link href="/posts/accompagnateur" >
-    <a onClick={() =>handleMenu()}>Accompagnateur de projets professionnels</a>
+    <a onClick={() =>handleMenu()}><h3 className='smalltype' >Accompagnateur de projets professionnels</h3></a>
     </Link>
     <Link href="/posts/misenforme" >
-    <a onClick={() =>handleMenu()}>Mise en forme et correction de publications</a>
+    <a onClick={() =>handleMenu()}><h3 className='smalltype' >Mise en forme et correction de publications</h3></a>
     </Link>
     <Link href="/posts/accueildesclients" >
-    <a onClick={(e) =>handleMenu()}>Accompagnement des Collaborateurs et Clients</a>
+    <a onClick={(e) =>handleMenu()}><h3 className='smalltype'>Accompagnement des Collaborateurs et Clients</h3></a>
     </Link>
     <Link href="/posts/cours" >
-    <a onClick={(e) => handleMenu(e)}>Cours d’anglais en distanciel ou en présentiel</a>
+    <a onClick={(e) => handleMenu(e)}><h3 className='smalltype'>Cours d’anglais en distanciel ou en présentiel</h3></a>
     </Link>
     <Link href="/posts/workingholiday" >
-    <a onClick={(e) =>handleMenu(e)}>Working Holiday au Conquet</a>
+    <a onClick={(e) =>handleMenu(e)}><h3 className='smalltype'>Working Holiday au Conquet</h3></a>
     </Link>
     <Link href="javascript:void(0);" >
     <Mailto email="someone@somewhere.com" subject="Salut" body="Tapez%20%0Avotre%20message%20ici%0A">Contact</Mailto>

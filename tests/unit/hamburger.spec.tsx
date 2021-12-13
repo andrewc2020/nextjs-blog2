@@ -2,6 +2,8 @@ import React from 'react';
 import { shallow, mount, render, configure } from 'enzyme';
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 import {Hamburger} from '../../components/hamburger'
+import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
+import  * as ddd from 'react-device-detect'
 
 
 
@@ -14,11 +16,13 @@ beforeAll( function(){
     it('should render without throwing an error', function() {
         expect(shallow(<Hamburger />).containsMatchingElement(<div />))
       });
-    // if(rdd.ismobile){
-    //     it('should have full text', function(){
-    //         let component = mount(<Hamburger />)
-    //         expect(component.find('a').at(3)).toHaveTextContent
+   
+      it('should have full text', function(){
+        if(!ddd.isMobile){
+       
+            let component = shallow(<Hamburger />)
+            expect(component.find('Tooltip').at(3)).toHaveTextContent
 
-    //     })
-    // }
+        }
+    })
   })
