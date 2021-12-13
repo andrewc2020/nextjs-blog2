@@ -1,10 +1,9 @@
-import { postProps } from '../lib/types'
 import React from 'react';
 import Layout from '../components/layout'
-import Carousel from '../components/carousel'
+import Carousel from '../components/carousel2'
 
 
-export default function Gallery(){
+export default function Ushant(){
  return(
     <Layout home={false}>
        <Carousel />
