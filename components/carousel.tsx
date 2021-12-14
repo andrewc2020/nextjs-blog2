@@ -19,7 +19,7 @@ export default function Carousel(){
              <Slide index={1}>Plage des Blancs Sablons.
                  <MyImage width={400} height={325} alt={"Plage des Blancs Sablons"} src={"IMG_9489.jpg"} loader={imageKitLoader({ src: "/IMG_9489.jpg", width: 400 })} />
              </Slide>
-             <Slide index={2}>Les petits bateaux.
+             <Slide index={2}>Les Petits Bateaux.
                  <MyImage width={400} height={325} alt={"Chez vous chez nous"} src={"/views/DSC_0483.JPG"} loader={imageKitLoader({ src: "/views/DSC_0483.JPG", width: 400 })} />
              </Slide>
              <Slide index={3}>En Haut.
@@ -49,13 +49,13 @@ export default function Carousel(){
              <Slide index={11}>Le Phare.
                  <MyImage width={400} height={325} alt={"Le Phare"} src={"DJI_0019.jpg"} loader={imageKitLoader({ src: "/DJI_0019.jpg", width: 400 })} />
              </Slide>
-             <Slide index={12}>Le Pont.
+             <Slide index={12}>La Passerelle.
                  <MyImage width={400} height={325} alt={"Le Pont"} src={"I_0028.jpg"} loader={imageKitLoader({ src: "/I_0028.jpg", width: 400 })} />
              </Slide>
              <Slide index={13}>Avis de tempête.
                  <MyImage width={400} height={325} alt={"Avis de tempête"} src={"/views/P1250592.JPG"} loader={imageKitLoader({ src: "/views/P1250592.JPG", width: 400 })} />
              </Slide>
-             <Slide index={14}>la fin d'une autre bonne journée.
+             <Slide index={14}>La Fin d'une autre Bonne Journée.
                  <MyImage width={400} height={325} alt={"la fin d'une autre bonne journée"} src={"/views/IMG_0266.JPG"} loader={imageKitLoader({ src: "/views/IMG_0266.JPG", width: 400 })} />
              </Slide>
          </Slider>

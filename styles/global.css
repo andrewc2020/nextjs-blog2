@@ -66,6 +66,10 @@ h3{
     font-size: 1.0rem;
     line-height: 1.0;
 }
+h3.smalltype {
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+}
 
 div #imageframe{
   width: 150px;
