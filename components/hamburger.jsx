@@ -94,16 +94,16 @@ export const Hamburger = () =>{
     
     </Link>     
   <Link href="/posts/accompagnateur" >
-    <a onClick={() =>handleMenu()}>Projets </a>
+    <a onClick={() =>handleMenu()}><Tooltip content="Accompagnateur de projets professionnels">Projets</Tooltip></a>
     </Link>
     <Link href="/posts/misenforme" >
-    <a onClick={() =>handleMenu()}>Corrections</a>
+    <a onClick={() =>handleMenu()}><Tooltip content="Mise en forme et correction de publications">Corrections</Tooltip></a>
     </Link>
     <Link href="/posts/accueildesclients" >
-    <a onClick={(e) =>handleMenu()}>Accompagnement clients / collaborateurs</a>
+    <a onClick={(e) =>handleMenu()}><Tooltip content="Accompagnement des Collaborateurs et Clients">Accompagnement clients / collaborateurs</Tooltip></a>
     </Link>
     <Link href="/posts/cours" >
-    <a onClick={(e) => handleMenu(e)}>Cours d’anglais</a>
+    <a onClick={(e) => handleMenu(e)}><Tooltip content="Cours d’anglais en distanciel ou en présentiel">Cours d’anglais</Tooltip></a>
     </Link>
     <Link href="/posts/workingholiday" >
     <a onClick={(e) =>handleMenu(e)}><Tooltip content="Working Holiday au Conquet">Working Holiday</Tooltip></a>

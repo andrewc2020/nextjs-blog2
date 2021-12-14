@@ -55,7 +55,7 @@ export default function Carousel(){
              <Slide index={13}>Avis de tempête.
                  <MyImage width={400} height={325} alt={"Avis de tempête"} src={"/views/P1250592.JPG"} loader={imageKitLoader({ src: "/views/P1250592.JPG", width: 400 })} />
              </Slide>
-             <Slide index={14}>la fin d'une autre bonne journée.
+             <Slide index={14}>La Fin d'une autre Bonne Journée.
                  <MyImage width={400} height={325} alt={"la fin d'une autre bonne journée"} src={"/views/IMG_0266.JPG"} loader={imageKitLoader({ src: "/views/IMG_0266.JPG", width: 400 })} />
              </Slide>
          </Slider>
