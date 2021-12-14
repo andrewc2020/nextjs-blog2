@@ -8,4 +8,4 @@ index: 4
 - Préparation aux Oraux des Grandes Ecoles.
 - Préparation pour un entretien.
 
-Contactez-moi au sujet de [Cours](mailto:someone@somewhere.com&amp;subject=Cours&amp;body=Tapez%20%0Avotre%20message%20ici%0A).
+Contactez-moi au sujet de [Cours](mailto:someone@somewhere.com&subject=Cours&body=Tapez%20%0Avotre%20message%20ici%0A).

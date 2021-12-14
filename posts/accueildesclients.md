@@ -10,4 +10,4 @@ Visite et présentation de votre entreprise
 Participation et animation de repas d’affaire
 Prise en charge de vos clients dans les moments de convivialités [exemples](/posts2/prise)
 
-Contactez-moi au sujet d' [Accompanement](mailto:someone@somewhere.com&amp;subject=Accompanement&amp;body=Tapez%20%0Avotre%20message%20ici%0A).
+Contactez-moi au sujet d' [Accompanement](mailto:someone@somewhere.com&subject=Accompanement&body=Tapez%20%0Avotre%20message%20ici%0A).
