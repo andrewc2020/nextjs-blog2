@@ -1,4 +1,4 @@
-yaimport React from 'react';
+import React from 'react';
 import { shallow, mount, render, configure } from 'enzyme';
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 import {Hamburger} from '../../components/hamburger'
