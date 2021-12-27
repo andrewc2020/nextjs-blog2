@@ -1,6 +1,6 @@
 import hamburgerstyles from './hamburger.module.css'
 import Link from 'next/link'
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Mailto from './mailto'
 import Tooltip from './tooltip'
 import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
@@ -8,11 +8,12 @@ import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detec
 
 export const Hamburger = () =>{
 
-    
+    const links = useRef(null)
   
   const handleClick = (e) => {
     e.preventDefault()
-    let x = document.getElementById("myLinks");
+   
+    let x = links.current
     if (x.style.display === "block") {
         x.style.display = "none";
     } else {
@@ -20,7 +21,8 @@ export const Hamburger = () =>{
     }
 
     const handleMenu = (e) =>{
-      let y = document.getElementById("myLinks");
+     
+      let y = links.current
       if (y.style.display === "block") {
           y.style.display = "none";
       } else {
@@ -87,7 +89,7 @@ export const Hamburger = () =>{
   <a className={hamburgerstyles.active}>accueil</a>
   </Link>
  
-  <div id="myLinks" className={hamburgerstyles.hidden}>
+  <div id="myLinks" className={hamburgerstyles.hidden} ref={links}>
   <Link href="/profile">
   
     <a>Profil</a>
