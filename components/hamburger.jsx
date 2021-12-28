@@ -1,6 +1,6 @@
 import hamburgerstyles from './hamburger.module.css'
 import Link from 'next/link'
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Mailto from './mailto'
 import Tooltip from './tooltip'
 import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
@@ -8,11 +8,12 @@ import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detec
 
 export const Hamburger = () =>{
 
-    
+    const links = useRef(null)
   
   const handleClick = (e) => {
     e.preventDefault()
-    let x = document.getElementById("myLinks");
+   
+    let x = links.current
     if (x.style.display === "block") {
         x.style.display = "none";
     } else {
@@ -20,7 +21,8 @@ export const Hamburger = () =>{
     }
 
     const handleMenu = (e) =>{
-      let y = document.getElementById("myLinks");
+     
+      let y = links.current
       if (y.style.display === "block") {
           y.style.display = "none";
       } else {
@@ -43,20 +45,20 @@ export const Hamburger = () =>{
   <a className={hamburgerstyles.active}>accueil</a>
   </Link>
  
-  <div id="myLinks" className={hamburgerstyles.hidden}>
+  <div id="myLinks" className={hamburgerstyles.hidden} ref={links}>
   <Link href="/profile">
   
     <a>Profil</a>
     
     </Link>     
   <Link href="/posts/accompagnateur" >
-    <a onClick={() =>handleMenu()}><h3 className='smalltype' >Accompagnateur de projets professionnels</h3></a>
+    <a onClick={() =>handleMenu(e)}><h3 className='smalltype' >Accompagnateur de projets professionnels</h3></a>
     </Link>
     <Link href="/posts/misenforme" >
-    <a onClick={() =>handleMenu()}><h3 className='smalltype' >Mise en forme et correction de publications</h3></a>
+    <a onClick={() =>handleMenu(e)}><h3 className='smalltype' >Mise en forme et correction de publications</h3></a>
     </Link>
     <Link href="/posts/accueildesclients" >
-    <a onClick={(e) =>handleMenu()}><h3 className='smalltype'>Accompagnement des Collaborateurs et Clients</h3></a>
+    <a onClick={(e) =>handleMenu(e)}><h3 className='smalltype'>Accompagnement des Collaborateurs et Clients</h3></a>
     </Link>
     <Link href="/posts/cours" >
     <a onClick={(e) => handleMenu(e)}><h3 className='smalltype'>Cours d’anglais en distanciel ou en présentiel</h3></a>
@@ -87,7 +89,7 @@ export const Hamburger = () =>{
   <a className={hamburgerstyles.active}>accueil</a>
   </Link>
  
-  <div id="myLinks" className={hamburgerstyles.hidden}>
+  <div id="myLinks" className={hamburgerstyles.hidden} ref={links}>
   <Link href="/profile">
   
     <a>Profil</a>
@@ -120,7 +122,7 @@ export const Hamburger = () =>{
   </div>
             <Link href="javascript:void(0);">
                 <a name="hamburger_icon" className={hamburgerstyles.icon} onClick={(e) => handleClick(e)} >
-                    <i id="hamburger" className="fa fa-bars" alt="hamburger icon"></i>
+                    <i id="hamburger" name="hamburger" className="fa fa-bars" alt="hamburger icon"></i>
                 </a>
             </Link>
 </div>
