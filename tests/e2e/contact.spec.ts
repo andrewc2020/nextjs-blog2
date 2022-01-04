@@ -7,6 +7,6 @@ test('should navigate to the contact page', async ({ page }) => {
     await page.click('text=Contact')
     // The new url should be "/contact" (baseURL is used there)
     await expect(page).toHaveURL('/contact')
-    // The new page should contain an h1 with "Profil"
-    await expect(page.locator('h1')).toContainText('Glyn')
+    // The new page should contain an h2 with "Contact"
+    await expect(page.locator('h2')).toContainText('Contact')
   })
