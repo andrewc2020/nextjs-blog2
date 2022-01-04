@@ -66,7 +66,7 @@ export const Hamburger = () =>{
     <Link href="/posts/workingholiday" >
     <a onClick={(e) =>handleMenu(e)}><h3 className='smalltype'>Working Holiday au Conquet</h3></a>
     </Link>
-    <Link href="javascript:void(0);" >
+    <Link href="/contact" >
     <Mailto email="someone@somewhere.com" subject="Salut" body="Tapez%20%0Avotre%20message%20ici%0A">Contact</Mailto>
     </Link>
    
