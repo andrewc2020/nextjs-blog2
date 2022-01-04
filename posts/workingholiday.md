@@ -7,7 +7,7 @@ OXYGENEZ VOTRE NIVEAU D’ANGLAIS !
 
 Conciliez apprentissage et détente dans un cadre exceptionnel. [Cliquez pour visiter la galerie](/gallery).
 
-Le contenu de la formation (cours et activités) seront axés sur vos centres d’intérêt : balades à pied ou en mer / visites touristiques...
+Le contenu de la formation (cours et activités) sera axé sur vos centres d’intérêt : balades à pied ou en mer / visites touristiques...
 
 Formule: minimum 3 jours.
 Réservé aux adultes.
