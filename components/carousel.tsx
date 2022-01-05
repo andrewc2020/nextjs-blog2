@@ -10,7 +10,7 @@ export default function Carousel(){
         <CarouselProvider
         naturalSlideWidth={400}
         naturalSlideHeight={325}
-        totalSlides={15}
+        totalSlides={16}
       >
          <Slider>
              <Slide index={0}>Le Conquet.
@@ -19,11 +19,11 @@ export default function Carousel(){
              <Slide index={1}>Plage des Blancs Sablons.
                  <MyImage width={400} height={325} alt={"Plage des Blancs Sablons"} src={"IMG_9489.jpg"} loader={imageKitLoader({ src: "/IMG_9489.jpg", width: 400 })} />
              </Slide>
-             <Slide index={2}>Les Petits Bateaux.
-                 <MyImage width={400} height={325} alt={"Chez vous chez nous"} src={"/views/DSC_0483.JPG"} loader={imageKitLoader({ src: "/views/DSC_0483.JPG", width: 400 })} />
+             <Slide index={2}>Plage des Blancs Sablons en hiver.
+                 <MyImage width={400} height={325} alt={"Plage des Blancs Sablons en hiver"} src={"/views/Winter.JPG"} loader={imageKitLoader({ src: "/views/Winter.JPG", width: 400 })} />
              </Slide>
-             <Slide index={3}>En Haut.
-                 <MyImage width={400} height={325} alt={"En haut"} src={"047_9A.jpg"} loader={imageKitLoader({ src: "/047_9A.jpg", width: 400 })} />
+             <Slide index={3}>Les Petits Bateaux.
+                 <MyImage width={400} height={325} alt={"Chez vous chez nous"} src={"/views/DSC_0483.JPG"} loader={imageKitLoader({ src: "/views/DSC_0483.JPG", width: 400 })} />
              </Slide>
              <Slide index={4}>En Haut 2.
                  <MyImage width={400} height={325} alt={"En Haut 2"} src={"/views/a_045_86sq9YJrn.jpg"} loader={imageKitLoader({ src: "/views/a_045_86sq9YJrn.jpg", width: 400 })} />
@@ -31,11 +31,12 @@ export default function Carousel(){
              <Slide index={5}>En Haut 3.
                  <MyImage width={400} height={325} alt={"En haut3"} src={"/views/a_044.jpg"} loader={imageKitLoader({ src: "/views/a_044.jpg", width: 400 })} />
              </Slide>
-             <Slide index={6}>En Haut 4.
-                 <MyImage width={400} height={325} alt={"En haut4"} src={"/views/plane2015_June19.JPG"} loader={imageKitLoader({ src: "/views/plane2015_June19.JPG", width: 400 })} />
-             </Slide>
-             <Slide index={7}>En Haut 5.
+            
+             <Slide index={6}>En Haut 5.
                  <MyImage width={400} height={325} alt={"En haut5"} src={"/views/a_043.jpg"} loader={imageKitLoader({ src: "/views/a_043.jpg", width: 400 })} />
+             </Slide>
+             <Slide index={7}>
+                 <MyImage width={400} height={325} alt={"The Jetty"} src={"/views/jetty.JPG"} loader={imageKitLoader({ src: "/views/jetty.JPG?tr=w-400", width: 400 })} />
              </Slide>
              <Slide index={8}>Le Port.
                  <MyImage width={400} height={325} alt={"Le Pont"} src={"a_107_BU.jpg"} loader={imageKitLoader({ src: "a_107_BU.jpg", width: 400 })} />
@@ -55,8 +56,11 @@ export default function Carousel(){
              <Slide index={13}>Avis de tempête.
                  <MyImage width={400} height={325} alt={"Avis de tempête"} src={"/views/P1250592.JPG"} loader={imageKitLoader({ src: "/views/P1250592.JPG", width: 400 })} />
              </Slide>
-             <Slide index={14}>La Fin d'une autre Bonne Journée.
-                 <MyImage width={400} height={325} alt={"la fin d'une autre bonne journée"} src={"/views/IMG_0266.JPG"} loader={imageKitLoader({ src: "/views/IMG_0266.JPG", width: 400 })} />
+             <Slide index={14}>La fin d'une bonne journée.
+                 <MyImage width={400} height={325} alt={"la fin d'une bonne journée"} src={"/views/IMG_0266.JPG"} loader={imageKitLoader({ src: "/views/IMG_0266.JPG", width: 400 })} />
+             </Slide>
+             <Slide index={15}>
+                 <MyImage width={400} height={325} alt={"Fin"} src={"/views/Sunset.jpg"} loader={imageKitLoader({ src: "/views/Sunset.jpg", width: 400 })} />
              </Slide>
          </Slider>
         <ButtonBack>Back</ButtonBack>
