@@ -35,7 +35,7 @@ export default function Carousel(){
              <Slide index={6}>En Haut 5.
                  <MyImage width={400} height={325} alt={"En haut5"} src={"/views/a_043.jpg"} loader={imageKitLoader({ src: "/views/a_043.jpg", width: 400 })} />
              </Slide>
-             <Slide index={7}>
+             <Slide index={7}>Le port dans une tempête.
                  <MyImage width={400} height={325} alt={"The Jetty"} src={"/views/jetty.JPG"} loader={imageKitLoader({ src: "/views/jetty.JPG?tr=w-400", width: 400 })} />
              </Slide>
              <Slide index={8}>Le Port.
@@ -59,7 +59,7 @@ export default function Carousel(){
              <Slide index={14}>La fin d'une bonne journée.
                  <MyImage width={400} height={325} alt={"la fin d'une bonne journée"} src={"/views/IMG_0266.JPG"} loader={imageKitLoader({ src: "/views/IMG_0266.JPG", width: 400 })} />
              </Slide>
-             <Slide index={15}>
+             <Slide index={15}>Fin du tour.
                  <MyImage width={400} height={325} alt={"Fin"} src={"/views/Sunset.jpg"} loader={imageKitLoader({ src: "/views/Sunset.jpg", width: 400 })} />
              </Slide>
          </Slider>

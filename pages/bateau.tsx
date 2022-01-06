@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 import VideoPlayer from '../components/videoplayer2';
 
 
-export default function Video(){
+export default function Bateau(){
  return(
     <Layout home={false}>
       

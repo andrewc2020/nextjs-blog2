@@ -2,18 +2,14 @@ import { postProps } from '../lib/types'
 import React from 'react';
 import Layout from '../components/layout'
 import Carousel from '../components/carousel'
-import VideoPlayer from '../components/videoplayer';
+
 
 
 export default function Gallery(){
  return(
     <Layout home={false}>
        <Carousel />
-       <div>
-          <VideoPlayer />
-       </div>
-
-       <a href="/posts/workingholiday">← Retournez à Working Holiday</a>
+        <a href="/posts/workingholiday">← Retournez à Working Holiday</a>
     </Layout>
  )
 }
