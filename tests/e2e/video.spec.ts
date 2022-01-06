@@ -19,3 +19,13 @@ test('should navigate to the boat trip video', async ({ page }) => {
     await expect(page).toHaveURL('/conquet')
    
   })
+
+  test('should navigate to the boat trip video and find a carousel', async ({ page }) => {
+    // Start from the index page (the baseURL is set via the webServer in the playwright.config.ts)
+    await page.goto('/bateau')
+   
+  
+    // The new url should be "/profile" (baseURL is used there)
+    await expect(page.locator('div.carousel')).toBeTruthy()
+   
+  })

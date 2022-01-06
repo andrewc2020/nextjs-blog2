@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout'
+import Carousel from '../components/carousel3';
 
 import VideoPlayer from '../components/videoplayer2';
 
@@ -10,6 +11,9 @@ export default function Bateau(){
       
        <div>
           <VideoPlayer />
+       </div>
+       <div id="gallery">
+          <Carousel />
        </div>
 
        <a href="/posts2/prise">← Retournez à Prise en Charge vos clients</a>
