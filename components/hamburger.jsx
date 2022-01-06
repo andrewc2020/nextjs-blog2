@@ -67,8 +67,8 @@ export const Hamburger = () =>{
     <a onClick={(e) =>handleMenu(e)}><h3 className='smalltype'>Working Holiday au Conquet</h3></a>
     </Link>
     <Link href="/contact" >
-    {/* <Mailto email="someone@somewhere.com" subject="Salut" body="Tapez%20%0Avotre%20message%20ici%0A">Contact</Mailto> */}
-    <a onClick={(e) =>handleMenu(e)}><h3 className='smalltype'>Contact</h3></a>
+   
+    <a onClick={(e) =>handleMenu(e)}>Contact</a>
     </Link>
    
     <Link href="/posts/tarifs" >
@@ -112,7 +112,7 @@ export const Hamburger = () =>{
     <a onClick={(e) =>handleMenu(e)}><Tooltip content="Working Holiday au Conquet">Working Holiday</Tooltip></a>
     </Link>
     <Link href="/contact" >
-    {/* <Mailto email="someone@somewhere.com" subject="Salut" body="Tapez%20%0Avotre%20message%20ici%0A">Contact</Mailto> */}
+  
     <a>Contact</a>
     </Link>
    
