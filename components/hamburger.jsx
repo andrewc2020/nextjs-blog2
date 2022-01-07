@@ -77,7 +77,7 @@ export const Hamburger = () =>{
     </Link>
    
   </div>
-            <Link href="javascript:void(0);">
+            <Link href="#">
                 <a name="hamburger_icon" className={hamburgerstyles.icon} onClick={(e) => handleClick(e)} >
                     <i id="hamburger" className="fa fa-bars" alt="hamburger icon"></i>
                 </a>
@@ -122,7 +122,7 @@ export const Hamburger = () =>{
     </Link>
    
   </div>
-            <Link href="javascript:void(0);">
+            <Link href="#">
                 <a name="hamburger_icon" className={hamburgerstyles.icon} onClick={(e) => handleClick(e)} >
                     <i id="hamburger" name="hamburger" className="fa fa-bars" alt="hamburger icon"></i>
                 </a>

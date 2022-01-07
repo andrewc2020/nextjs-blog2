@@ -7,6 +7,6 @@ index: 2
 - Commerciales
 - Techniques
 
-Relecture & correction d’épreuves pour optimiser le potentiel de publication.
+Relecture & correction d’épreuves pour optimiser le potentiel avant publication.
 
-Contactez-moi au sujet de [Mise en forme](mailto:info@glyneltconsultant.fr?subject=Mise%20en%20Forme&body=Tapez%20%0Avotre%20message%20ici%0A).
+Contactez-moi [Mise en forme](mailto:info@glyneltconsultant.fr?subject=Mise%20en%20Forme&body=Tapez%20%0Avotre%20message%20ici%0A).

@@ -9,7 +9,7 @@ export default function Gallery(){
  return(
     <Layout home={false}>
        <Carousel />
-        <a href="/posts/workingholiday">← Retournez à Working Holiday</a>
+        <a href="/posts/workingholiday">← Retour à Working Holiday</a>
     </Layout>
  )
 }

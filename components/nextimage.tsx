@@ -1,4 +1,5 @@
 import Image, {ImageLoaderProps} from "next/image";
+import getConfig from 'next/config'
 
 
 
@@ -14,7 +15,11 @@ type props = {
 
 }
 
+const { publicRuntimeConfig } = getConfig();
+
 export function imageKitLoader({ src, width, quality }: ImageLoaderProps){
+
+  
   if(src[0] === "/") src = src.slice(1);
   const params = [`w-${width.toString()}`];
   if (quality) {
@@ -22,9 +27,13 @@ export function imageKitLoader({ src, width, quality }: ImageLoaderProps){
   }
  
   const paramsString = params.join(",");
-  let urlEndpoint = "https://ik.imagekit.io/eudt3rlpetf/";
+  
+  let urlEndpoint = publicRuntimeConfig.image_key;
+
+
  
-  if(urlEndpoint[urlEndpoint.length-1] === "/") urlEndpoint = urlEndpoint.substring(0, urlEndpoint.length - 1);
+  if(urlEndpoint[urlEndpoint.length-1] === "/")
+  { urlEndpoint = urlEndpoint.substring(0, urlEndpoint.length - 1);}
  
   return `${urlEndpoint}/${src}?tr=${paramsString}`
 }

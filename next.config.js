@@ -5,8 +5,17 @@ module.exports = {
       defaultLocale: "fr",
     },
     tsconfigPath:"./",
-    images: {
-      loader: 'custom',
-      path: 'https://ik.imagekit.io/eudt3rlpetf/',
+    
+    serverRuntimeConfig: {
+      // Will only be available on the server side
+      mySecret: 'secret',
+      secondSecret: process.env.SECOND_SECRET // Pass through env variables
+     
+    },
+    publicRuntimeConfig: {
+      // Will be available on both server and client
+      staticFolder: '/static',
+      image_key: process.env.NEXT_PUBLIC_IMAGE_KEY, //?
+      public_key: process.env.NEXT_PUBLIC_PUBLIC_KEY
     },
   };
