@@ -88,7 +88,7 @@ export default function Layout({ children, home }: Props) {
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/#services">
-            <a>← Retour</a>
+            <a>← Retour accueil</a>
           </Link>
         </div>
       )}
