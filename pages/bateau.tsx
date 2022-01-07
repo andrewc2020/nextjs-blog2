@@ -16,7 +16,7 @@ export default function Bateau(){
           <Carousel />
        </div>
 
-       <a href="/posts2/prise">← Retournez à Prise en Charge vos clients</a>
+       <a href="/posts2/prise">← Retour à Prise en Charge vos clients</a>
     </Layout>
  )
 }

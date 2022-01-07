@@ -58,7 +58,7 @@ export default function Layout({ children, home }: Props) {
               </Link>
             </h1>
             <div className= {utilStyles.centred}>
-            <h2>Facilitateur et Consultant en Anglais</h2>
+            <h2>Facilitateur et Consultant en anglais</h2>
             
            
            </div>
@@ -77,7 +77,7 @@ export default function Layout({ children, home }: Props) {
               </Link>
             </h1>
             <div className= {utilStyles.centred}>
-            <h2>Facilitateur et Consultant en Anglais</h2>
+            <h2>Facilitateur et Consultant en anglais</h2>
          
            </div>
           </>
@@ -88,7 +88,7 @@ export default function Layout({ children, home }: Props) {
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/#services">
-            <a>← Retournez</a>
+            <a>← Retour accueil</a>
           </Link>
         </div>
       )}

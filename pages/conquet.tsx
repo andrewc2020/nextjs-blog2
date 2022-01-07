@@ -12,7 +12,7 @@ export default function Conquet(){
           <VideoPlayer />
        </div>
 
-       <a href="/posts/workingholiday">← Retournez à Working Holiday</a>
+       <a href="/posts/workingholiday">← Retour à Working Holiday</a>
     </Layout>
  )
 }
