@@ -77,7 +77,7 @@ export default function Layout({ children, home }: Props) {
               </Link>
             </h1>
             <div className= {utilStyles.centred}>
-            <h2>Facilitateur et Consultant en Anglais</h2>
+            <h2>Facilitateur et Consultant en anglais</h2>
          
            </div>
           </>
