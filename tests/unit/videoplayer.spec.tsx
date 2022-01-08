@@ -3,7 +3,7 @@ import { screen, render } from '@testing-library/react'
 import { VideoProps } from '../../lib/types';
 
 
-import VideoPlayerParam from '../../components/videoplayerparam'
+import VideoPlayer from '../../components/videoplayer'
 
 let source: string = "/public/videos/sample.mp4"
 it('should render the videoplayer',() =>{
@@ -11,7 +11,7 @@ it('should render the videoplayer',() =>{
 
 let params : VideoProps = { "endpoint" : source  }
    
-    render(<VideoPlayerParam {...params} />)
+    render(<VideoPlayer {...params} />)
 
     screen.debug()
 
