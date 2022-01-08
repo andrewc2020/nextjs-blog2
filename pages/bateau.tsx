@@ -1,16 +1,19 @@
 import React from 'react';
 import Layout from '../components/layout'
 import Carousel from '../components/carousel3';
+import getConfig from 'next/config'
 
-import VideoPlayer from '../components/videoplayer2';
+import VideoPlayerParam from '../components/videoplayerparam';
 
 
 export default function Bateau(){
+   const { publicRuntimeConfig } = getConfig();
+   let endpoint = `${publicRuntimeConfig.image_key}/video/MBVV8571_converted_ia2BjnyJx.mp4`
  return(
     <Layout home={false}>
       
        <div>
-          <VideoPlayer />
+          <VideoPlayerParam endpoint={endpoint} />
        </div>
        <div id="gallery">
           <Carousel />
