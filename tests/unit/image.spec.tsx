@@ -1,7 +1,9 @@
 import '@testing-library/jest-dom';
 import { screen, render } from '@testing-library/react'
 import { IKImage, IKContext, IKUpload } from 'imagekitio-react'
+import {MyImage} from '@/components/nextimage'
 import getConfig from 'next/config'
+import { debug } from 'console';
 
 it('should render an img tag',()=>{
     render( <IKContext urlEndpoint="https://somestorage.com/my-bucket/" > 
@@ -29,4 +31,10 @@ it('should render an img tag from a mocked endpoint',()=>{
     </IKContext>)
     screen.debug()
     expect(screen.findByRole(<img />)).toBeTruthy()
+})
+
+it('should render a next image', () =>{
+    render(<MyImage src={'/view/w5429742.jpg'} loader={undefined} alt={'my rendered image'} width={400} height={350} /> )
+    screen.debug()
+    expect(screen.findByRole(<img/>)).toBeTruthy()
 })

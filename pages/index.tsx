@@ -80,7 +80,7 @@ export default function Home({ allPostsData}: any) {
 
        {/* Add the services show/hide button when at home level otherwise dispense with it  */}
       {!isServices?(
-      <Link href='javascript:void(0)'>
+      <Link href='#'>
 
         <a id='showhide'  onClick={(e) => handleClick(e)}>{isShow && !isServices?'masquer services':'services'}</a>
      
