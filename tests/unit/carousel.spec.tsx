@@ -2,7 +2,7 @@ import '@testing-library/jest-dom';
 import { screen, render } from '@testing-library/react'
 import { IKImage, IKContext, IKUpload } from 'imagekitio-react'
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
-import Carousel from '../../components/carousel'
+import Carousel from '@/components/carousel'
 
 
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import Layout from '../components/layout'
-import Carousel from '../components/carousel3'
+import Layout from '@/components/layout'
+import Carousel from '@/components/carousel3'
 import { IKContext } from 'imagekitio-react'
 import getConfig from 'next/config'
 

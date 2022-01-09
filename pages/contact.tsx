@@ -1,6 +1,6 @@
-import Layout from '../components/layout'
-import { getPostData } from '../lib/posts'
-import { postProps } from '../lib/types'
+import Layout from '@/components/layout'
+import { getPostData } from '@/lib/posts'
+import { postProps } from '@/lib/types'
 
 const id: string = 'contact'
 const folder: string = 'contact'

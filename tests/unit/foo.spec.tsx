@@ -2,8 +2,8 @@ import React from 'react';
 import { shallow, mount, render, configure } from 'enzyme';
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 
-import Foo from '../../components/Foo';
-import Bar from '../../components/Bar'
+import Foo from '@/components/Foo';
+import Bar from '@/components/Bar'
 
 beforeAll( function(){
   configure({ adapter: new Adapter() })
