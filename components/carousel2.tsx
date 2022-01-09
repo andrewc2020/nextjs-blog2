@@ -10,7 +10,7 @@ export default function Carousel(){
            <CarouselProvider
            naturalSlideWidth={400}
            naturalSlideHeight={325}
-           totalSlides={8}
+           totalSlides={9}
          >
             <Slider>
                 <Slide index={0}>
@@ -38,6 +38,10 @@ export default function Carousel(){
                 <Slide index={7}>
                     <MyImage width={400} height={325} alt={"Bedroom view"} src={"/ushant/Bedroom_view.JPG"} loader={imageKitLoader({ src: "/ushant/Bedroom_view.JPG", width: 400 })} />
                 </Slide>
+                <Slide index={8}>
+                    <MyImage width={400} height={325} alt={"Port view"} src={"/ushant/DSC_0486.JPG"} loader={imageKitLoader({ src: "/ushant/DSC_0486.JPG", width: 400 })} />
+                </Slide>
+               
                
             </Slider>
            <ButtonBack>Back</ButtonBack>
