@@ -1,15 +1,13 @@
 import '@testing-library/jest-dom';
 import { screen, render } from '@testing-library/react'
 import { IKImage, IKContext, IKUpload } from 'imagekitio-react'
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+import Carousel from '../../components/carousel3'
 
-it('should render an img tag',()=>{
+it('should render a carousel tag',()=>{
     render( <IKContext urlEndpoint="https://somestorage.com/my-bucket/" > 
-    <IKImage path="/profile.jpg" alt="Glyn" transformation={[{
-        "height": "150",
-        "width": "100"
-        
-    }]} />
+        <Carousel />
     </IKContext>)
     screen.debug()
-    expect(screen.findByRole(<img />)).toBeTruthy()
+    expect(screen.findByLabelText('slider')).toBeTruthy()
 })
