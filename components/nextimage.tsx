@@ -19,7 +19,7 @@ type props = {
 
 
 
-export const MyImage = (props: props) => {
+const MyImage = (props: props) => {
   return (
     <Image
       loader={imageKitLoader}
@@ -30,3 +30,5 @@ export const MyImage = (props: props) => {
     />
   );
 };
+
+export {imageKitLoader, MyImage}
