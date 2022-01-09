@@ -18,3 +18,8 @@ export type staticProps = {
     index: number,
     title: string
   }
+
+  export type VideoProps =
+  {
+    endpoint : string
+  }
