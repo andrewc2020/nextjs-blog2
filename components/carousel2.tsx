@@ -39,7 +39,7 @@ export default function Carousel(){
                     <MyImage width={400} height={325} alt={"Bedroom view"} src={"/ushant/Bedroom_view.JPG"} loader={imageKitLoader({ src: "/ushant/Bedroom_view.JPG", width: 400 })} />
                 </Slide>
                 <Slide index={8}>
-                    <MyImage width={400} height={325} alt={"Port view"} src={"/ushant/DSC_0486.JPG"} loader={imageKitLoader({ src: "/ushant/DSC_0486.JPG", width: 400 })} />
+                    <MyImage width={400} height={325} alt={"Port view"} src={"/ushant/PICT0002.JPG"} loader={imageKitLoader({ src: "/ushant/PICT0002.JPG", width: 400 })} />
                 </Slide>
                
                
