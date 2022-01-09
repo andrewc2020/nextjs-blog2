@@ -4,7 +4,7 @@ import Carousel from '@/components/carousel3'
 import { IKContext } from 'imagekitio-react'
 import getConfig from 'next/config'
 
-import VideoPlayer from '../components/videoplayer';
+import VideoPlayer from '@/components/videoplayer';
 
 
 
