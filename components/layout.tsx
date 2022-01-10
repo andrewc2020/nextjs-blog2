@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
+
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
@@ -49,7 +49,7 @@ export default function Layout({ children, home }: Props) {
           <>
            <Link href="/profile">
               <a>
-              <MyImage width={100} height={125} alt={"Glyn"} src={"profile_4.jpg"} loader={undefined} />
+              <MyImage width={100} height={125} alt={"Glyn"} src={"profile_4.jpg"}  />
             
             </a>
             </Link>
