@@ -67,7 +67,7 @@ export default function Layout({ children, home }: Props) {
           <>
             <Link href="/">
               <a>
-              <MyImage width={100} height={125} alt={"Glyn"} src="profile_4.jpg" loader={undefined}  />
+              <MyImage width={100} height={125} alt={"Glyn"} src="profile_4.jpg"   />
            
               </a>
             </Link>

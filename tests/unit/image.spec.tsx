@@ -34,20 +34,6 @@ it('should render an img tag from a mocked endpoint',()=>{
     expect(screen.findByRole(<img />)).toBeTruthy()
 })
 
-it('should render a next image', () =>{
-    render(<MyImage src={'/view/w5429742.jpg'} alt={'my rendered image'} width={400} height={350} /> )
-    screen.debug()
-    expect(screen.findByRole(<img/>)).toBeTruthy()
-})
-
-it('should dynamically create a mocked url for the image', () =>{
-
-    let url = imageKitLoader( {src:'/view/w5429742.jpg', width:400, quality:75})
-    console.log(url)
-   
-    expect(url).toBeTruthy()
-})
-
 it('should render an img tag from a mocked SERVER SIDE from base64 encoded data',()=>{
     // getConfig is being mocked in jest.setup.js
         const {serverRuntimeConfig } = getConfig()
@@ -63,3 +49,18 @@ it('should render an img tag from a mocked SERVER SIDE from base64 encoded data'
         screen.debug()
         expect(screen.findByRole(<img />)).toBeTruthy()
     })
+
+it('should render a next image using an endpoint supplied by imagekitloader', () =>{
+    render(<MyImage src={'/view/w5429742.jpg'} alt={'my rendered image'} width={400} height={350} /> )
+    screen.debug()
+    expect(screen.findByRole(<img/>)).toBeTruthy()
+})
+
+it('should dynamically create a mocked url for the image', () =>{
+
+    let url = imageKitLoader( {src:'/view/w5429742.jpg', width:400, quality:75})
+    console.log(url)
+   
+    expect(url).toBeTruthy()
+})
+
