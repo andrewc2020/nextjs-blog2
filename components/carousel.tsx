@@ -26,7 +26,7 @@ export default function Carousel(){
                     "height": "325",
                     "width": "400"
 
-                }]} alt={"Plage des Blancs Sablons"} path={"IMG_9489.jpg"}  />
+                }]} alt={"Plage des Blancs Sablons"} path={"/views/IMG_9489.jpg"}  />
              </Slide>
              <Slide index={2}>
                  <IKImage transformation={[{
@@ -77,7 +77,7 @@ export default function Carousel(){
                     "height": "325",
                     "width": "400"
 
-                }]} alt={"Coup d'oeil"} path={"DJI_0072.jpg"}  />
+                }]} alt={"Coup d'oeil"} path={"/views/DJI_0072.jpg"}  />
              </Slide>
              <Slide index={9}>
                  <IKImage transformation={[{

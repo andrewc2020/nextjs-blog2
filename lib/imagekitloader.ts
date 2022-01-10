@@ -9,6 +9,9 @@ export function imageKitLoader({ src, width, quality }: ImageLoaderProps){
     if (quality) {
       params.push(`q-${quality || 75}`);
     }
+    else{
+      params.push('q-75');
+    }
    
     const paramsString = params.join(",");
     

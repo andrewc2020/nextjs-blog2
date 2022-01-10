@@ -9,7 +9,7 @@ import {Hamburger} from './hamburger'
 import { MyImage } from '../components/nextimage'
 
 const name = 'Glyn'
-export const siteTitle = 'Next.js Sample Website'
+export const siteTitle = 'Glyn Facilitateur et Consultant en langue anglaise'
 
 interface Props {
   // any props that come into the component
@@ -25,6 +25,10 @@ export default function Layout({ children, home }: Props) {
       <Head>
         
         <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
         <meta
           name="description"

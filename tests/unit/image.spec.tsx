@@ -64,3 +64,11 @@ it('should dynamically create a mocked url for the image', () =>{
     expect(url).toBeTruthy()
 })
 
+it('should dynamically create a mocked url for the image which is a viable link with a default quality', () =>{
+
+    let url = imageKitLoader( {src:'/view/w5429742.jpg', width:400})
+    console.log(url)
+   
+    expect(url).toBeTruthy()
+})
+
