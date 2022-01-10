@@ -5,8 +5,8 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import {Hamburger} from './hamburger'
 
-import {IKimage} from '../components/image'
-import { imageKitLoader, MyImage } from '../components/nextimage'
+
+import { MyImage } from '../components/nextimage'
 
 const name = 'Glyn'
 export const siteTitle = 'Next.js Sample Website'
