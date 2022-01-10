@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
+import Layout, { siteTitle } from '@/components/layout'
 import utilStyles from '../styles/utils.module.css'
-import { getSortedPostsData } from '../lib/posts'
+import { getSortedPostsData } from '@/lib/posts'
 import Link from 'next/link'
 import { GetStaticProps} from 'next'
 
@@ -80,7 +80,7 @@ export default function Home({ allPostsData}: any) {
 
        {/* Add the services show/hide button when at home level otherwise dispense with it  */}
       {!isServices?(
-      <Link href='javascript:void(0)'>
+      <Link href='#'>
 
         <a id='showhide'  onClick={(e) => handleClick(e)}>{isShow && !isServices?'masquer services':'services'}</a>
      

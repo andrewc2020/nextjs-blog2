@@ -1,9 +1,9 @@
 import '@testing-library/jest-dom';
 import { screen, render } from '@testing-library/react'
-import { VideoProps } from '../../lib/types';
+import { VideoProps } from '@/lib/types';
 
 
-import VideoPlayer from '../../components/videoplayer'
+import VideoPlayer from '@/components/videoplayer'
 
 let source: string = "/public/videos/sample.mp4"
 it('should render the videoplayer',() =>{

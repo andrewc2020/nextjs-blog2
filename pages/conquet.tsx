@@ -1,7 +1,7 @@
 import React from 'react';
-import Layout from '../components/layout'
+import Layout from '@/components/layout'
 import getConfig from 'next/config'
-import VideoPlayer from '../components/videoplayer';
+import VideoPlayer from '@/components/videoplayer';
 
 
 export default function Conquet(){

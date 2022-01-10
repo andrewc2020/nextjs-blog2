@@ -5,12 +5,16 @@ module.exports = {
       defaultLocale: "fr",
     },
     tsconfigPath:"./",
+    images:{
+      domains: ['ik.imagekit.io']
+
+    },
     
     serverRuntimeConfig: {
       // Will only be available on the server side
       mySecret: 'secret',
-      secondSecret: process.env.SECOND_SECRET // Pass through env variables
-     
+      secondSecret: process.env.SECOND_SECRET, // Pass through env variables
+      image_key: process.env.NEXT_PUBLIC_IMAGE_KEY, //?
     },
     publicRuntimeConfig: {
       // Will be available on both server and client
