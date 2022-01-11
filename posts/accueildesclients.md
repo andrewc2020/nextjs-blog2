@@ -10,4 +10,4 @@ Visite et présentation de votre entreprise.
 Participation et animation de repas d’affaires.
 Prise en charge de vos clients dans les moments de convivialité. [Exemples](/posts2/prise)
 
-Contactez-moi [Accompagnement](mailto:info@glyneltconsultant.fr?subject=Accompanement&body=Tapez%20%0Avotre%20message%20ici%0A).
+Contactez-moi [Accompagnement](mailto:info@glyneltconsultant.fr?subject=Accompagnement&body=Tapez%20%0Avotre%20message%20ici%0A).
