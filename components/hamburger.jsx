@@ -48,7 +48,7 @@ export const Hamburger = () =>{
   <div id="myLinks" className={hamburgerstyles.hidden} ref={links}>
   <Link href="/profile">
   
-    <a>Profil</a>
+    <a>Mon profil (réalisations et compétences)</a>
     
     </Link>     
   <Link href="/posts/accompagnateur" >
@@ -93,8 +93,7 @@ export const Hamburger = () =>{
   <div id="myLinks" className={hamburgerstyles.hidden} ref={links}>
   <Link href="/profile">
   
-    <a>Profil
-    <Tooltip content="Mon profil (réalisations et compétences)">Profil</Tooltip>
+    <a><Tooltip content="Mon profil (réalisations et compétences)">Profil</Tooltip>
     </a>
     
     </Link>     

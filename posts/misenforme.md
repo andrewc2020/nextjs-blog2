@@ -12,4 +12,4 @@ Relecture & correction :
 - de documents officiels et/ou administratifs.
 
 
-Contactez-moi [Relecture](mailto:info@glyneltconsultant.fr?subject=Relecture et correction&body=Tapez%20%0Avotre%20message%20ici%0A).
+Contactez-moi [Relecture](mailto:info@glyneltconsultant.fr?subject=Relecture&body=Tapez%20%0Avotre%20message%20ici%0A)

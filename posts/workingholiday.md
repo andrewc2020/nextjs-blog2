@@ -5,7 +5,7 @@ index: 5
 
 OXYGENEZ VOTRE NIVEAU D’ANGLAIS !
 
-Conciliez apprentissage et détente dans un [cadre exceptionnel](/gallery) [video](/conquet).
+Conciliez apprentissage et détente dans un [cadre exceptionnel](/gallery).
 
 Le contenu de la formation (cours et activités) sera adapté à vos centres d’intérêt : balades à pied ou en [mer](/bateau), visites touristiques...
 
