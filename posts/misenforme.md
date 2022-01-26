@@ -1,12 +1,15 @@
 ---
-title: 'Mise en forme et correction de publications'
+title: 'Relecture et correction de documents'
 index: 2
 ---
 
-- Scientifiques
-- Commerciales
-- Techniques
+- Publications & rapports scientifiques
+- Documents commerciaux & techniques
 
-Relecture & correction d’épreuves pour optimiser le potentiel avant publication.
 
-Contactez-moi [Mise en forme](mailto:info@glyneltconsultant.fr?subject=Mise%20en%20Forme&body=Tapez%20%0Avotre%20message%20ici%0A).
+Relecture & correction :
+- d’épreuves pour optimiser le potentiel avant publication.
+- de documents officiels et/ou administratifs.
+
+
+Contactez-moi [Relecture](mailto:info@glyneltconsultant.fr?subject=Relecture et correction&body=Tapez%20%0Avotre%20message%20ici%0A).

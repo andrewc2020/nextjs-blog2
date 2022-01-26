@@ -55,7 +55,7 @@ export const Hamburger = () =>{
     <a onClick={() =>handleMenu(e)}><h3 className='smalltype' >Accompagnateur de projets professionnels</h3></a>
     </Link>
     <Link href="/posts/misenforme" >
-    <a onClick={() =>handleMenu(e)}><h3 className='smalltype' >Mise en forme et correction de publications</h3></a>
+    <a onClick={() =>handleMenu(e)}><h3 className='smalltype' >Mise en forme et correction de publications et de documents officiels</h3></a>
     </Link>
     <Link href="/posts/accueildesclients" >
     <a onClick={(e) =>handleMenu(e)}><h3 className='smalltype'>Accompagnement des Collaborateurs et Clients</h3></a>
@@ -93,14 +93,16 @@ export const Hamburger = () =>{
   <div id="myLinks" className={hamburgerstyles.hidden} ref={links}>
   <Link href="/profile">
   
-    <a>Profil</a>
+    <a>Profil
+    <Tooltip content="Mon profil (réalisations et compétences)">Profil</Tooltip>
+    </a>
     
     </Link>     
   <Link href="/posts/accompagnateur" >
     <a onClick={() =>handleMenu()}><Tooltip content="Accompagnateur de projets professionnels">Projets</Tooltip></a>
     </Link>
     <Link href="/posts/misenforme" >
-    <a onClick={() =>handleMenu()}><Tooltip content="Mise en forme et correction de publications">Corrections</Tooltip></a>
+    <a onClick={() =>handleMenu()}><Tooltip content="Relecture et correction de publications et de documents officiels">Corrections</Tooltip></a>
     </Link>
     <Link href="/posts/accueildesclients" >
     <a onClick={(e) =>handleMenu()}><Tooltip content="Accompagnement des Collaborateurs et Clients">Accompagnement clients / collaborateurs</Tooltip></a>

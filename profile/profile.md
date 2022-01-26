@@ -1,19 +1,17 @@
 ---
-title: 'Mon Profil'
+title: 'Mon Profil (réalisations et compétences)'
 date: '2020-04-02'
 ---
 
-Double nationalité britannique et française, domicilié en Bretagne au Conquet.
-Co-fondateur de ENGLISH APART en 1985 : Etablissement spécialisé dans l’enseignement de la langue
-anglaise.
-Co-dirigeant de l’établissement ENGLISH APART jusqu'en 2020.
-Formateur en langue anglaise et coach auprès des professionnels ***scientifiques, commerciaux et
-techniques***.
-Expérience dans des domaines pluri-disciplinaires : 
-Contrôle aérien, Energies renouvelables, 
-Domaine médical : immunologie, cardiologie, ophtalmologie, 
-Recherche scientifique : données scientifiques, biologie, géologie, 
-Carénage de bateaux, Industrie automobile : générateurs de gaz (inflators) ...
+- Double nationalité britannique et française, domicilié au Conquet en Bretagne.
+- Co-fondateur en 1985 et co-dirigeant jusqu'en 2020 de ENGLISH APART 
+-- Etablissement spécialisé dans l’enseignement de la langue anglaise.
+
+- Formateur en langue anglaise et coach auprès des professionnels ***scientifiques, commerciaux et industriels***.
+- Expérience de nombreux domaines dans plusieurs disciplines : 
+Contrôle aérien, energies renouvelables, carénage de bateaux, industrie automobile, 
+recherche médicale (immunologie, cardiologie, ophtalmologie) et autres domaines scientifique :  biologie, géologie , etc… 
+
 
 ## Centres d'Intérêt
 
