@@ -1,15 +1,11 @@
 ---
-title: 'Relecture et correction de documents'
+title: 'Relecture et correction de documents pour optimisation avant publication :'
 index: 2
 ---
 
-- Publications & rapports scientifiques
-- Documents commerciaux & techniques
-
-
-Relecture & correction :
-- d’épreuves pour optimiser le potentiel avant publication.
-- de documents officiels et/ou administratifs.
+- Articles & rapports scientifiques.
+- Documents commerciaux & techniques.
+- Documents officiels et/ou administratifs.
 
 
 Contactez-moi [Relecture](mailto:info@glyneltconsultant.fr?subject=Relecture&body=Tapez%20%0Avotre%20message%20ici%0A)
