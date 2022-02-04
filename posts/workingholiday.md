@@ -9,7 +9,7 @@ Conciliez apprentissage et détente dans un [cadre exceptionnel](/gallery).
 
 Le contenu de la formation (cours et activités) sera adapté à vos centres d’intérêt : balades à pied ou en [mer](/bateau), visites touristiques...
 
-Formule: minimum 3 jours.
+Formule : minimum 3 jours.
 Réservé aux adultes.
 
 ## Hébergement : 2 options
