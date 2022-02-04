@@ -1,5 +1,5 @@
 ---
-title: Prise en charge de vos clients dans les moments de convivialité
+title: 'Prise en charge de vos clients dans les moments de convivialité :'
 index: 3.3
 ---
 
