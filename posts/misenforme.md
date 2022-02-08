@@ -1,5 +1,5 @@
 ---
-title: 'Relecture et correction de documents pour optimisation avant publication :'
+title: 'Relecture et correction de documents pour optimisation avant publication'
 index: 2
 ---
 
