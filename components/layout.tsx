@@ -52,13 +52,13 @@ export default function Layout({ children, home }: Props) {
         {home ? (
           <>
            <Link href="/profile">
-              <a>
+             
               <MyImage width={100} height={125} alt={"Glyn"} src={"profile_4.jpg"}  />
             
-            </a>
+           
             </Link>
-            <h1><Link href="/profile">
-                <a className={utilStyles.colorInherit}>{name}</a>
+            <h1><Link href="/profile" className={utilStyles.colorInherit}>{name}>
+               
               </Link>
             </h1>
             <div className= {utilStyles.centred}>
@@ -70,14 +70,14 @@ export default function Layout({ children, home }: Props) {
         ) : (
           <>
             <Link href="/">
-              <a>
+             
               <MyImage width={100} height={125} alt={"Glyn"} src="profile_4.jpg"   />
            
-              </a>
+              
             </Link>
             <h1>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
+              <Link href="/" className={utilStyles.colorInherit}>{name}>
+               
               </Link>
             </h1>
             <div className= {utilStyles.centred}>
@@ -92,7 +92,7 @@ export default function Layout({ children, home }: Props) {
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/#services">
-            <a>← Retour à l'accueil</a>
+           ← Retour à l'accueil
           </Link>
         </div>
       )}

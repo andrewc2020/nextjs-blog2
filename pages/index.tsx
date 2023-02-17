@@ -80,9 +80,9 @@ export default function Home({ allPostsData}: any) {
 
        {/* Add the services show/hide button when at home level otherwise dispense with it  */}
       {!isServices?(
-      <Link href='#'>
+      <Link href='#'id='showhide'  onClick={(e) => handleClick(e)}>
 
-        <a id='showhide'  onClick={(e) => handleClick(e)}>{isShow && !isServices?'masquer services':'services'}</a>
+        {isShow && !isServices?'masquer services':'services'}
      
       </Link>
   ):(<p/>)}
@@ -95,9 +95,7 @@ export default function Home({ allPostsData}: any) {
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, index, title }: Post) => (
            <li   key={id}>
-           <Link href={`/posts/${id}`}>
-             <a ><small>{title}</small></a>
-           </Link>
+           <Link href={`/posts/${id}`}><small>{title}</small></Link>
         
            <small className={ `${utilStyles.lightText} ${utilStyles.hidden}`}>
              {index.toString()}
