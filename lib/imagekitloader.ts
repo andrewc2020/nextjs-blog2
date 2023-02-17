@@ -15,7 +15,7 @@ export function imageKitLoader({ src, width, quality }: ImageLoaderProps){
    
     const paramsString = params.join(",");
     
-    let urlEndpoint = publicRuntimeConfig.image_key;
+    let urlEndpoint : string = publicRuntimeConfig.image_key;
   
   
    

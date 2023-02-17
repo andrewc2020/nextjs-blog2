@@ -72,9 +72,7 @@ export default function Layout({ children, home }: Props) {
               <MyImage width={100} height={125} alt={"Glyn"} src="profile_4.jpg"   />
             </Link>
             <h1>
-              <Link href="/" className={utilStyles.colorInherit}>{name}
-               
-              </Link>
+              <Link href="/" className={utilStyles.colorInherit}>{name}</Link>
             </h1>
             <div className= {utilStyles.centred}>
             <h2>Facilitateur et Consultant en anglais</h2>
