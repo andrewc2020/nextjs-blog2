@@ -5,6 +5,7 @@ import { IKContext } from 'imagekitio-react'
 import getConfig from 'next/config'
 
 import VideoPlayer from '@/components/videoplayer';
+import Link from 'next/link';
 
 
 
@@ -23,7 +24,7 @@ export default function Bateau() {
             </IKContext>
          </div>
 
-         <a href="/posts2/prise">← Retour à Prise en Charge vos clients</a>
+         <Link href="/posts2/prise">← Retour à Prise en Charge vos clients</Link>
       </Layout>
    )
 }
