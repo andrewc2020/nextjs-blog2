@@ -3,7 +3,7 @@
  * @type {import('next').NextConfig}
  */
 
-module.exports = {
+const nextConfig = {
     i18n: {
       locales: ["fr"],
       defaultLocale: "fr",
@@ -27,3 +27,5 @@ module.exports = {
       public_key: process.env.NEXT_PUBLIC_PUBLIC_KEY
     },
   };
+
+  module.exports = nextConfig
