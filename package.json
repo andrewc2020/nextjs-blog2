@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "lint": "next lint",
     "test": "playwright test",
     "jest": "jest --passWithNoTests"
   },
@@ -47,6 +48,8 @@
     "@types/node": "^16.11.7",
     "@types/react": "^17.0.35",
     "babel-jest": "^27.4.2",
+    "eslint": "8.34.0",
+    "eslint-config-next": "13.1.6",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.4.5",
     "typescript": "^4.4.4"
