@@ -107,7 +107,7 @@ export const Hamburger = () =>{
     <Tooltip content="Accompagnement des Collaborateurs et Clients">Accompagnement clients / collaborateurs</Tooltip>
     </Link>
     <Link href="/posts/cours" >
-    <a ><Tooltip content="Cours d’anglais en distanciel ou en présentiel">Cours d’anglais</Tooltip></a>
+    <Tooltip content="Cours d’anglais en distanciel ou en présentiel">Cours d’anglais</Tooltip>
     </Link>
     <Link href="/posts/workingholiday" onClick={(e) => handleMenu(e)} >
     <Tooltip content="Working Holiday au Conquet">Working Holiday</Tooltip>
