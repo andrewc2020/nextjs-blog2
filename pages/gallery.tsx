@@ -16,7 +16,7 @@ export default function Gallery(){
        <IKContext urlEndpoint={publicRuntimeConfig.image_key} >
           <Carousel />
        </IKContext>
-         <p><a href="/conquet">video</a></p>
+         <p><Link href="/conquet">video</Link></p>
        
         <Link href="/posts/workingholiday">← Retour à Working Holiday</Link>
     </Layout>
