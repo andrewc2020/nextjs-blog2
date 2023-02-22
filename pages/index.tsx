@@ -5,7 +5,7 @@ import { getSortedPostsData } from '@/lib/posts'
 import Link from 'next/link'
 import { GetStaticProps} from 'next'
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 import { Post } from '../lib/types'
 
@@ -25,7 +25,7 @@ export default function Home({ allPostsData}: any) {
 
   const [isShow, setIsShow] = React.useState(false);
   const [isServices, setIsServices] = React.useState(false);
-
+ 
   useEffect(() => {
     // Update the document title using the browser API
 
@@ -57,8 +57,9 @@ export default function Home({ allPostsData}: any) {
     const handleClick = (e: any) => {
       e.preventDefault()
       setIsShow(!isShow);
-      let x: any = document.getElementById("services");
-      x.classList.toggle('utils_hidden__ImX6l')
+      //let x: any = document.getElementById("services");
+      //x.classList.toggle('utils_hidden__ImX6l')
+      
       
       
       
@@ -90,7 +91,7 @@ export default function Home({ allPostsData}: any) {
       {/* <h2>en langue anglaise</h2> */}
       {/* Add this <section> tag below the existing <section> tag */}
       <p/>
-      <section id='services' className={`${utilStyles.headingMd}  ${utilStyles.hidden}`}>
+      <section id='services'   className={isShow? `${utilStyles.headingMd}  `: `${utilStyles.headingMd} ${utilStyles.hidden}`}>
       
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, index, title }: Post) => (
