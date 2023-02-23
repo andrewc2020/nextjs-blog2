@@ -36,11 +36,11 @@ export default function Home({ allPostsData}: any) {
     if(y.indexOf('#') >-1){
       
 
-      let x: any = document.getElementById("services");
+     // let x: any = document.getElementById("services");
       setIsShow(true);
       setIsServices(true)
      
-      x.classList.remove("utils_hidden__ImX6l");
+     // x.classList.remove("utils_hidden__ImX6l");
       
 
     } else{
@@ -57,8 +57,7 @@ export default function Home({ allPostsData}: any) {
     const handleClick = (e: any) => {
       e.preventDefault()
       setIsShow(!isShow);
-      //let x: any = document.getElementById("services");
-      //x.classList.toggle('utils_hidden__ImX6l')
+      
       
       
       
@@ -91,7 +90,7 @@ export default function Home({ allPostsData}: any) {
       {/* <h2>en langue anglaise</h2> */}
       {/* Add this <section> tag below the existing <section> tag */}
       <p/>
-      <section id='services'   className={isShow? `${utilStyles.headingMd}  `: `${utilStyles.headingMd} ${utilStyles.hidden}`}>
+      <section id='services'   className={isShow? `${utilStyles.headingMd}  `: `${utilStyles.hidden}`}>
       
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, index, title }: Post) => (
