@@ -15,11 +15,11 @@ export function imageKitLoader({ src, width, quality }: ImageLoaderProps){
    
     const paramsString = params.join(",");
     
-    let urlEndpoint = publicRuntimeConfig.image_key;
+    let urlEndpoint : String = publicRuntimeConfig.image_key;
   
   
    
-    if(urlEndpoint[urlEndpoint.length-1] === "/")
+    if(urlEndpoint && urlEndpoint[urlEndpoint.length-1] === "/")
     { urlEndpoint = urlEndpoint.substring(0, urlEndpoint.length - 1);}
    
     return `${urlEndpoint}/${src}?tr=${paramsString}`

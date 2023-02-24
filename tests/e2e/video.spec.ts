@@ -4,7 +4,7 @@ test('should navigate to the boat trip video', async ({ page }) => {
     // Start from the index page (the baseURL is set via the webServer in the playwright.config.ts)
     await page.goto('/posts2/prise')
     // Find an element with the text 'Glyn' and click on it
-    await page.click('text=video')
+    await page.click('text=PARC MARIN')
     // The new url should be "/profile" (baseURL is used there)
     await expect(page).toHaveURL('/bateau')
    
@@ -14,9 +14,9 @@ test('should navigate to the boat trip video', async ({ page }) => {
     // Start from the index page (the baseURL is set via the webServer in the playwright.config.ts)
     await page.goto('/posts/workingholiday')
     // Find an element with the text 'Glyn' and click on it
-    await page.click('text=video')
+    await page.click('text=Glyn & Rolande')
     // The new url should be "/profile" (baseURL is used there)
-    await expect(page).toHaveURL('/conquet')
+    await expect(page).toHaveURL('/ushant')
    
   })
 

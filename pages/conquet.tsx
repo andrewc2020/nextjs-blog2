@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '@/components/layout'
 import getConfig from 'next/config'
 import VideoPlayer from '@/components/videoplayer';
+import Link from 'next/link';
 
 
 export default function Conquet(){
@@ -14,7 +15,7 @@ export default function Conquet(){
           <VideoPlayer endpoint={source}  />
        </div>
 
-       <a href="/posts/workingholiday">← Retour à Working Holiday</a>
+       <Link href="/posts/workingholiday">← Retour à Working Holiday</Link>
     </Layout>
  )
 }

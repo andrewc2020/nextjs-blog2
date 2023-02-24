@@ -6,8 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "lint": "next lint",
     "test": "playwright test",
-    "jest" : "jest --passWithNoTests"
+    "jest": "jest --passWithNoTests"
   },
   "dependencies": {
     "15": "^0.0.0",
@@ -25,11 +26,12 @@
     "imagekitio-react": "^1.0.11",
     "jsdom": "^19.0.0",
     "jsdom-global": "^3.0.2",
-    "next": "^11.0.0",
+    "next": "^13.1.6",
+    "prop-types": "^15.8.1",
     "pure-react-carousel": "^1.27.8",
-    "react": "17.0.2",
+    "react": "^18.2.0",
     "react-device-detect": "^2.1.2",
-    "react-dom": "17.0.2",
+    "react-dom": "^18.2.0",
     "react-laag": "^2.0.3",
     "react-test-renderer": "^17.0.2",
     "remark": "^13.0.0",
@@ -47,6 +49,8 @@
     "@types/node": "^16.11.7",
     "@types/react": "^17.0.35",
     "babel-jest": "^27.4.2",
+    "eslint": "8.34.0",
+    "eslint-config-next": "13.1.6",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.4.5",
     "typescript": "^4.4.4"
