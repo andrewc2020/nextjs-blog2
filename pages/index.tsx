@@ -36,11 +36,11 @@ export default function Home({ allPostsData}: any) {
     if(y.indexOf('#') >-1){
       
 
-     // let x: any = document.getElementById("services");
+     
       setIsShow(true);
       setIsServices(true)
      
-     // x.classList.remove("utils_hidden__ImX6l");
+     
       
 
     } else{
