@@ -41,92 +41,92 @@ export const Hamburger = () =>{
 <div>
 <MobileView>
 <div className={hamburgerstyles.topnav} >
-  <Link href="/">
-  <a className={hamburgerstyles.active}>accueil</a>
+  <Link href="/"  className={hamburgerstyles.active}>accueil
+  
   </Link>
  
   <div id="myLinks" className={hamburgerstyles.hidden} ref={links}>
-  <Link href="/profile">
+  <Link href="/profile">Mon profil (réalisations et compétences)
   
-    <a>Mon profil (réalisations et compétences)</a>
+   
     
     </Link>     
-  <Link href="/posts/accompagnateur" >
-    <a onClick={() =>handleMenu(e)}><h3 className='smalltype' >Accompagnateur de projets professionnels</h3></a>
+  <Link href="/posts/accompagnateur" onClick={() =>handleMenu(e)}><h3 className='smalltype'>
+    Accompagnateur de projets professionnels</h3>
     </Link>
-    <Link href="/posts/misenforme" >
-    <a onClick={() =>handleMenu(e)}><h3 className='smalltype' >Relecture et correction de documents pour optimisation avant publication</h3></a>
+    <Link href="/posts/misenforme" onClick={() =>handleMenu(e)}>
+    <h3 className='smalltype' >Relecture et correction de documents pour optimisation avant publication</h3>
     </Link>
-    <Link href="/posts/accueildesclients" >
-    <a onClick={(e) =>handleMenu(e)}><h3 className='smalltype'>Accompagnement des Collaborateurs et Clients</h3></a>
+    <Link href="/posts/accueildesclients" onClick={(e) =>handleMenu(e)}>
+    <h3 className='smalltype'>Accompagnement des Collaborateurs et Clients</h3>
     </Link>
-    <Link href="/posts/cours" >
-    <a onClick={(e) => handleMenu(e)}><h3 className='smalltype'>Cours d’anglais en distanciel ou en présentiel</h3></a>
+    <Link href="/posts/cours" onClick={(e) => handleMenu(e)}>
+    <h3 className='smalltype'>Cours d’anglais en distanciel ou en présentiel</h3>
     </Link>
-    <Link href="/posts/workingholiday" >
-    <a onClick={(e) =>handleMenu(e)}><h3 className='smalltype'>Working Holiday au Conquet</h3></a>
+    <Link href="/posts/workingholiday" onClick={(e) =>handleMenu(e)}>
+    <h3 className='smalltype'>Working Holiday au Conquet</h3>
     </Link>
-    <Link href="/contact" >
+    <Link href="/contact" onClick={(e) =>handleMenu(e)} >
    
-    <a onClick={(e) =>handleMenu(e)}>Contact</a>
+    Contact
     </Link>
    
-    <Link href="/posts/tarifs" >
-    <a onClick={(e) => handleMenu(e)}>Tarifs</a>
+    <Link href="/posts/tarifs" onClick={(e) => handleMenu(e)}>
+    Tarifs
    
     </Link>
    
   </div>
-            <Link href="#">
-                <a name="hamburger_icon" className={hamburgerstyles.icon} onClick={(e) => handleClick(e)} >
+            <Link href="#" name="hamburger_icon" className={hamburgerstyles.icon} onClick={(e) => handleClick(e)}>
+               
                     <i id="hamburger" className="fa fa-bars" alt="hamburger icon"></i>
-                </a>
+               
             </Link>
 </div>
 </MobileView>
 <BrowserView>
 <div className={hamburgerstyles.topnav} >
-  <Link href="/">
-  <a className={hamburgerstyles.active}>accueil</a>
+  <Link href="/" className={hamburgerstyles.active}>
+  accueil
   </Link>
  
   <div id="myLinks" className={hamburgerstyles.hidden} ref={links}>
   <Link href="/profile">
   
-    <a><Tooltip content="Mon profil (réalisations et compétences)">Profil</Tooltip>
-    </a>
+    <Tooltip content="Mon profil (réalisations et compétences)">Profil</Tooltip>
+   
     
     </Link>     
-  <Link href="/posts/accompagnateur" >
-    <a onClick={() =>handleMenu()}><Tooltip content="Accompagnateur de projets professionnels">Projets</Tooltip></a>
+  <Link href="/posts/accompagnateur"  onClick={() =>handleMenu()} >
+    <Tooltip content="Accompagnateur de projets professionnels">Projets</Tooltip>
     </Link>
-    <Link href="/posts/misenforme" >
-    <a onClick={() =>handleMenu()}><Tooltip content="Relecture et correction de documents pour optimisation avant publication">Corrections</Tooltip></a>
+    <Link href="/posts/misenforme" onClick={() =>handleMenu()} >
+    <Tooltip content="Relecture et correction de documents pour optimisation avant publication">Corrections</Tooltip>
     </Link>
-    <Link href="/posts/accueildesclients" >
-    <a onClick={(e) =>handleMenu()}><Tooltip content="Accompagnement des Collaborateurs et Clients">Accompagnement clients / collaborateurs</Tooltip></a>
+    <Link href="/posts/accueildesclients" onClick={(e) =>handleMenu()}>
+    <Tooltip content="Accompagnement des Collaborateurs et Clients">Accompagnement clients / collaborateurs</Tooltip>
     </Link>
     <Link href="/posts/cours" >
-    <a onClick={(e) => handleMenu(e)}><Tooltip content="Cours d’anglais en distanciel ou en présentiel">Cours d’anglais</Tooltip></a>
+    <Tooltip content="Cours d’anglais en distanciel ou en présentiel">Cours d’anglais</Tooltip>
     </Link>
-    <Link href="/posts/workingholiday" >
-    <a onClick={(e) =>handleMenu(e)}><Tooltip content="Working Holiday au Conquet">Working Holiday</Tooltip></a>
+    <Link href="/posts/workingholiday" onClick={(e) => handleMenu(e)} >
+    <Tooltip content="Working Holiday au Conquet">Working Holiday</Tooltip>
     </Link>
     <Link href="/contact" >
   
-    <a>Contact</a>
+    Contact
     </Link>
    
-    <Link href="/posts/tarifs" >
-    <a onClick={(e) => handleMenu(e)}>Tarifs</a>
+    <Link href="/posts/tarifs" onClick={(e) => handleMenu(e)}>
+   Tarifs
    
     </Link>
    
   </div>
-            <Link href="#">
-                <a name="hamburger_icon" className={hamburgerstyles.icon} onClick={(e) => handleClick(e)} >
+            <Link href="#" name="hamburger_icon" className={hamburgerstyles.icon} onClick={(e) => handleClick(e)}>
+                
                     <i id="hamburger" name="hamburger" className="fa fa-bars" alt="hamburger icon"></i>
-                </a>
+                
             </Link>
 </div>
 </BrowserView>
